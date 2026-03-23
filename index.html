@@ -19,14 +19,16 @@
           <img src="assets/favicon.png" alt="Clinic Logo" class="brand-logo" />
           <span class="brand-name" data-i18n="brandName">عيادة د. مهدي صالح بلاسم للطب النفسي والعصبي</span>
         </a>
-
+		<div class="header-actions">
+          <button class="lang-toggle" id="langToggle" type="button">AR | EN</button>
+          <a class="btn btn-solid btn-small" href="https://wa.me/9647713295841" target="_blank" rel="noopener" data-i18n="headerWhatsapp">واتساب</a>
+        </div>
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">
           <span></span>
           <span></span>
           <span></span>
         </button>
       </div>
-
       <div class="header-bottom">
         <nav class="site-nav" id="siteNav">
           <a href="#home" data-i18n="navHome">الرئيسية</a>
@@ -37,11 +39,6 @@
           <a href="#faq" data-i18n="navFaq">الأسئلة الشائعة</a>
           <a href="#contact" data-i18n="navContact">التواصل</a>
         </nav>
-
-        <div class="header-actions">
-          <button class="lang-toggle" id="langToggle" type="button">AR | EN</button>
-          <a class="btn btn-solid btn-small" href="https://wa.me/9647713295841" target="_blank" rel="noopener" data-i18n="headerWhatsapp">واتساب</a>
-        </div>
       </div>
     </div>
   </header>
@@ -53,7 +50,7 @@
           <div class="eyebrow" data-i18n="heroEyebrow">رعاية مهنية في بيئة دافئة وآمنة</div>
           <h1 data-i18n="heroTitle">عيادة د. مهدي صالح بلاسم للطب النفسي والعصبي</h1>
           <p class="hero-text" data-i18n="heroText">
-            موقع تعريفي حديث يركز على الطمأنينة والثقة وسهولة الوصول إلى معلومات الدكتور، الخدمات، الشهادات، وموقع العيادة.
+            تهدف العيادة إلى مساعدة المراجعين على تحسين صحتهم النفسية من خلال التقييم الدقيق، ووضع خطة علاجية مناسبة لكل حالة، والمتابعة الطبية المستمرة.
           </p>
 
           <div class="hero-actions">
@@ -80,8 +77,8 @@
     <section class="section" id="about">
       <div class="container split-grid">
         <div class="content-card">
-          <div class="section-tag" data-i18n="aboutTag">عن الدكتور</div>
-          <h2 data-i18n="aboutTitle">نبذة تعريفية بأسلوب إنساني ومهني</h2>
+          <div class="section-tag" data-i18n="aboutTag">خدمات العيادة</div>
+          <h3 data-i18n="aboutTitle">نبذة عن الخدمات الصحية والنفسية في العيادة</h3>
           <p data-i18n="aboutText1">
             تقدم العيادة خدمات متخصصة في تشخيص وعلاج عدد من الاضطرابات النفسية والعصبية باستخدام أساليب علاجية حديثة مبنية على أسس علمية، في بيئة مهنية تحترم الخصوصية والسرية الطبية.
           </p>
@@ -91,7 +88,7 @@
 
           <div class="mini-stats">
             <div class="mini-stat">
-              <strong data-i18n="statOneTitle">تقييم دقيق</strong>
+			  <strong data-i18n="statOneTitle">تقييم دقيق</strong>
               <span data-i18n="statOneText">خطة علاجية مناسبة لكل حالة</span>
             </div>
             <div class="mini-stat">
@@ -116,9 +113,9 @@
     <section class="section section-soft" id="services">
       <div class="container">
         <div class="section-head center">
-          <span class="section-tag" data-i18n="servicesTag">الخدمات</span>
+          <span class="section-tag" data-i18n="servicesTag">الخدمات الرئيسية</span>
           <h2 data-i18n="servicesTitle">الخدمات الرئيسية</h2>
-          <p data-i18n="servicesIntro">الخدمات التالية تم اعتمادها في النسخة الحالية من الموقع، ويمكن توسيعها لاحقاً حسب رغبة الدكتور.</p>
+          <p data-i18n="servicesIntro">الخدمات التالية تم اعتمادها في النسخة الحالية من الموقع، ويمكن توسيعها لاحقاً.</p>
         </div>
         <div class="cards-grid" id="servicesGrid"></div>
       </div>
@@ -215,35 +212,39 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <div class="footer-brand" data-i18n="brandName">عيادة د. مهدي صالح بلاسم للطب النفسي والعصبي</div>
-        <p data-i18n="footerText">واجهة عربية/إنجليزية دافئة وعصرية تركز على الثقة والراحة وسهولة الوصول للمعلومات الأساسية.</p>
-      </div>
-      <div>
-        <h3 data-i18n="footerQuickLinks">روابط سريعة</h3>
-        <div class="footer-links">
-          <a href="#about" data-i18n="navAbout">عن الدكتور</a>
-          <a href="#services" data-i18n="navServices">الخدمات</a>
-          <a href="#certificates" data-i18n="navCertificates">الشهادات</a>
-          <a href="#contact" data-i18n="navContact">التواصل</a>
-        </div>
-      </div>
-      <div>
-        <h3 data-i18n="footerContact">التواصل</h3>
-        <div class="footer-contact">
-          <span>07713295841</span>
-          <span data-i18n="footerAddress">بغداد - ساحة بيروت - مجمع المدينة الطبي</span>
-          <span data-i18n="footerHours">يومياً ما عدا الجمعة والأثنين</span>
-        </div>
+<footer class="site-footer">
+  <div class="container footer-grid">
+
+    <div class="footer-row">
+      <strong class="footer-title" data-i18n="footerQuickLinks">روابط سريعة:</strong>
+      <div class="footer-links">
+        <a href="#about" data-i18n="navAbout">عن الدكتور</a>
+        <span class="footer-separator">|</span>
+
+        <a href="#services" data-i18n="navServices">الخدمات</a>
+        <span class="footer-separator">|</span>
+
+        <a href="#certificates" data-i18n="navCertificates">الشهادات</a>
+        <span class="footer-separator">|</span>
+
+        <a href="#contact" data-i18n="navContact">التواصل</a>
       </div>
     </div>
-    <div class="container footer-bottom">
-      <span id="copyright"></span>
-      <a class="floating-whatsapp" href="https://wa.me/9647713295841" target="_blank" rel="noopener" data-i18n="floatingWhatsapp">واتساب</a>
+
+    <div class="footer-row">
+      <strong class="footer-title" data-i18n="footerContact">الموقع ورقم العيادة:</strong>
+      <div class="footer-contact">
+        <span data-i18n="footerAddress">بغداد - ساحة بيروت - مجمع المدينة الطبي - للإتصال : 07713295841</span>
+      </div>
     </div>
-  </footer>
+
+  </div>
+
+  <div class="container footer-bottom">
+    <span id="copyright"></span>
+    <a class="floating-whatsapp" href="https://wa.me/9647713295841" target="_blank" rel="noopener" data-i18n="floatingWhatsapp">واتساب</a>
+  </div>
+</footer>
 
   <div class="lightbox" id="lightbox" aria-hidden="true">
     <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close">×</button>

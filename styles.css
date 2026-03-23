@@ -90,8 +90,8 @@ button {
 .contact-card h2,
 .side-panel h3 {
   margin: 0.35rem 0 0;
-  font-size: clamp(1.55rem, 2vw, 2.2rem);
-  line-height: 1.18;
+  font-size: clamp(1.15rem, 2vw, 1.15rem);
+  line-height: 4;
 }
 
 .section-head p,
@@ -114,6 +114,7 @@ button {
   color: var(--primary-dark);
   padding: 0.72rem 1rem;
   border-radius: 999px;
+  font-size: 1.15rem;
   font-weight: 700;
   box-shadow: 0 8px 24px rgba(47, 157, 133, 0.08);
 }
@@ -299,7 +300,7 @@ button {
   font-size: 1.05rem;
   line-height: 2;
   color: var(--text-soft);
-  max-width: 62ch;
+  max-width: fit-content;
 }
 
 .hero-actions {
@@ -410,7 +411,7 @@ button {
 
 .mini-stats {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
   margin-top: 1.6rem;
 }
@@ -721,37 +722,93 @@ button {
 
 .site-footer {
   padding: 0 0 2rem;
+  text-align: center;
 }
 
 .footer-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr 0.8fr;
-  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
   padding: 1.8rem 0 1rem;
   border-top: 1px solid rgba(47, 157, 133, 0.12);
 }
 
-.footer-brand,
-.site-footer h3 {
-  margin: 0 0 0.8rem;
+.footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-title {
+  margin: 0;
   font-size: 1.06rem;
   font-weight: 800;
+  color: var(--text);
+  white-space: nowrap;
 }
 
 .footer-links,
 .footer-contact {
-  display: grid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 0.55rem;
+  flex-wrap: wrap;
   color: var(--text-soft);
+}
+
+.footer-links a {
+  white-space: nowrap;
+  text-decoration: none;
+  color: var(--text-soft);
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.footer-links a:hover {
+  color: var(--primary);
+  transform: translateY(-1px);
+}
+
+.footer-contact span {
+  white-space: nowrap;
+}
+
+.footer-separator {
+  color: var(--text-soft);
+  opacity: 0.6;
+  user-select: none;
 }
 
 .footer-bottom {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+  justify-content: center;
+  gap: 0.8rem;
   padding-top: 1rem;
   color: var(--text-soft);
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .footer-row {
+    flex-direction: column;
+    gap: 0.45rem;
+  }
+
+  .footer-contact span {
+    white-space: normal;
+  }
+
+  .footer-links,
+  .footer-contact {
+    justify-content: center;
+  }
 }
 
 .floating-whatsapp {
