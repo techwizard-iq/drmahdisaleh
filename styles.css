@@ -295,7 +295,7 @@ button {
 }
 
 .hero-copy h1 {
-  font-size: clamp(2rem, 4vw, 3.35rem);
+  font-size: clamp(1.35rem, 2.2vw, 2rem);
   line-height: 1.22;
   margin: 1rem 0;
 }
