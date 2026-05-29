@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="عيادة د. مهدي صالح بلاسم للطب النفسي والعصبي في بغداد. معلومات عن الدكتور، الخدمات، الشهادات، معرض الصور، موقع العيادة، والحجز عبر الهاتف أو واتساب." />
+  <meta name="referrer" content="strict-origin-when-cross-origin"/>
   <title>عيادة الدكتور مهدي صالح بلاسم للطب النفسي والعصبي</title>
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="stylesheet" href="styles.css" />
@@ -20,7 +21,7 @@
           <span class="brand-name" data-i18n="brandName">عيادة د. مهدي صالح بلاسم للطب النفسي والعصبي</span>
         </a>
 		<div class="header-actions">
-          <button class="lang-toggle" id="langToggle" type="button">AR | EN</button>
+          <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">AR | EN</button>
           <a class="btn btn-solid btn-small" href="https://wa.me/9647713295841" target="_blank" rel="noopener" data-i18n="headerWhatsapp">واتساب</a>
         </div>
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">
@@ -36,6 +37,7 @@
           <a href="#services" data-i18n="navServices">الخدمات</a>
           <a href="#certificates" data-i18n="navCertificates">الشهادات</a>
           <a href="#gallery" data-i18n="navGallery">المعرض</a>
+		  <a href="#youtube" data-i18n="navYoutube">يوتيوب</a>
           <a href="#faq" data-i18n="navFaq">الأسئلة الشائعة</a>
           <a href="#contact" data-i18n="navContact">التواصل</a>
         </nav>
@@ -77,13 +79,13 @@
     <section class="section" id="about">
       <div class="container split-grid">
         <div class="content-card">
-          <div class="section-tag" data-i18n="aboutTag">خدمات العيادة</div>
-          <h3 data-i18n="aboutTitle">نبذة عن الخدمات الصحية والنفسية في العيادة</h3>
+          <div class="section-tag" data-i18n="aboutTag">عن الدكتور</div>
+          <h3 data-i18n="aboutTitle">نبذة مهنية مختصرة</h3>
           <p data-i18n="aboutText1">
-            تقدم العيادة خدمات متخصصة في تشخيص وعلاج عدد من الاضطرابات النفسية والعصبية باستخدام أساليب علاجية حديثة مبنية على أسس علمية، في بيئة مهنية تحترم الخصوصية والسرية الطبية.
+            د. مهدي صالح بلاسم طبيب مختص في الطب النفسي والعصبي، ويقدم خدمات تشخيصية وعلاجية ضمن إطار طبي مهني يراعي خصوصية المراجع وسرية المعلومات.
           </p>
           <p data-i18n="aboutText2">
-            يركز نهج العيادة على التقييم الدقيق، ووضع خطة علاجية مناسبة لكل حالة، مع المتابعة الطبية المستمرة ودعم المراجعين لفهم مشكلاتهم والعمل على تحسين جودة حياتهم.
+            يركز أسلوب العيادة على فهم الحالة بشكل دقيق، ومناقشة الخطة العلاجية المناسبة، ثم المتابعة المنتظمة لمساعدة المراجع على تحسين جودة حياته.
           </p>
 
           <div class="mini-stats">
@@ -127,7 +129,7 @@
           <div>
             <span class="section-tag" data-i18n="certTag">الشهادات</span>
             <h2 data-i18n="certTitle">الشهادات والمؤهلات</h2>
-            <p data-i18n="certIntro">تم فصل الشهادات الأكاديمية عن الشهادات التقديرية وشهادات المشاركة لسهولة التنظيم والإضافة لاحقاً.</p>
+            <p data-i18n="certIntro">يعرض هذا القسم المؤهلات والشهادات المهنية المتوفرة حالياً، مع إمكانية تحديث الصور أو إضافة شهادات جديدة لاحقاً.</p>
           </div>
         </div>
 
@@ -146,19 +148,52 @@
         <div class="section-head center">
           <span class="section-tag" data-i18n="galleryTag">المعرض</span>
           <h2 data-i18n="galleryTitle">اللقاءات والمشاركات</h2>
-          <p data-i18n="galleryIntro">هذا القسم مخصص فقط للصور الخاصة باللقاءات الإعلامية والمشاركات والأنشطة المهنية. صور الشهادات تبقى في قسم منفصل.</p>
+          <p data-i18n="galleryIntro">صور من المشاركات والأنشطة المهنية واللقاءات. اضغط على أي صورة لعرضها بحجم أكبر.</p>
         </div>
 
         <div class="gallery-grid" id="galleryGrid"></div>
       </div>
     </section>
+<section class="section" id="youtube">
+  <div class="container youtube-grid">
 
+    <div class="youtube-card">
+      <span class="section-tag" data-i18n="youtubeTag">قناة الدكتور</span>
+      <h2 data-i18n="youtubeTitle">فيديوهات توعوية ولقاءات للدكتور</h2>
+      <p data-i18n="youtubeIntro">
+        يمكنكم متابعة قناة الدكتور على يوتيوب لمشاهدة اللقاءات والمقاطع التوعوية المتعلقة بالصحة النفسية والعصبية.
+      </p>
+
+      <div class="youtube-actions">
+        <a
+          class="btn btn-solid"
+          href="https://www.youtube.com/@%D9%85%D9%87%D8%AF%D9%8A%D8%A8%D9%84%D8%A7%D8%B3%D9%85-%D9%844%D9%85"
+          target="_blank"
+          rel="noopener"
+          data-i18n="youtubeButton">
+          زيارة قناة اليوتيوب
+        </a>
+      </div>
+    </div>
+
+    <div class="youtube-video-card">
+      <iframe
+	    src="https://www.youtube.com/embed/b4EnjAGkFd0?si=wVktnCgkHLRp1kC2"
+        title="YouTube video"
+		referrerpolicy="strict-origin-when-cross-origin"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+  </div>
+</section>
     <section class="section" id="faq">
       <div class="container narrow">
         <div class="section-head center">
           <span class="section-tag" data-i18n="faqTag">الأسئلة الشائعة</span>
-          <h2 data-i18n="faqTitle">هيكل جاهز للتعبئة والتحديث</h2>
-          <p data-i18n="faqIntro">يمكن تعديل هذه الأسئلة وإجاباتها لاحقاً حسب توجيهات الدكتور وطبيعة العمل داخل العيادة.</p>
+          <h2 data-i18n="faqTitle">أسئلة تساعدك قبل الزيارة</h2>
+          <p data-i18n="faqIntro">إجابات مختصرة عن الحجز، الموقع، الخصوصية، وطبيعة التواصل مع العيادة.</p>
         </div>
 
         <div class="faq-list" id="faqList"></div>
@@ -237,6 +272,10 @@
         <span data-i18n="footerAddress">بغداد - ساحة بيروت - مجمع المدينة الطبي - للإتصال : 07713295841</span>
       </div>
     </div>
+    <div class="footer-row footer-disclaimer">
+      <span data-i18n="footerDisclaimer">الموقع مخصص للتعريف بالعيادة وتسهيل الحجز، ولا يغني عن الاستشارة الطبية المباشرة أو مراجعة الطوارئ عند الحاجة.</span>
+    </div>
+
 
   </div>
 

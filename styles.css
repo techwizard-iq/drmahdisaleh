@@ -90,8 +90,8 @@ button {
 .contact-card h2,
 .side-panel h3 {
   margin: 0.35rem 0 0;
-  font-size: clamp(1.15rem, 2vw, 1.15rem);
-  line-height: 4;
+  font-size: clamp(1.35rem, 2.2vw, 2rem);
+  line-height: 1.45;
 }
 
 .section-head p,
@@ -101,6 +101,10 @@ button {
   margin: 0.8rem 0 0;
   color: var(--text-soft);
   line-height: 1.9;
+}
+
+.section-head.center p {
+  max-width: 760px;
 }
 
 .section-tag,
@@ -291,8 +295,8 @@ button {
 }
 
 .hero-copy h1 {
-  font-size: clamp(1.95rem, 4vw, 1.95rem);
-  line-height: 1.2;
+  font-size: clamp(2rem, 4vw, 3.35rem);
+  line-height: 1.22;
   margin: 1rem 0;
 }
 
@@ -482,6 +486,16 @@ button {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
+.service-icon img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.service-icon span {
+  line-height: 1;
+}
+
 .has-media::before {
   display: none;
 }
@@ -564,6 +578,12 @@ button {
   object-fit: cover;
   object-position: center;
   transition: transform 0.35s ease;
+}
+
+.cert-card .card-media img {
+  object-fit: contain;
+  background: #fff;
+  padding: 0.35rem;
 }
 
 .has-media:hover img {
@@ -776,6 +796,14 @@ button {
 
 .footer-contact span {
   white-space: nowrap;
+}
+
+.footer-disclaimer {
+  max-width: 900px;
+  margin-inline: auto;
+  color: var(--text-soft);
+  font-size: 0.92rem;
+  line-height: 1.8;
 }
 
 .footer-separator {
@@ -1034,9 +1062,15 @@ button {
     flex-direction: column;
   }
 
-  .btn,
-  .lang-toggle {
+  .hero-actions .btn,
+  .contact-actions .btn {
     width: 100%;
+  }
+
+  .header-actions .btn,
+  .header-actions .lang-toggle {
+    width: auto;
+    padding-inline: 0.8rem;
   }
 
   .header-wrap {
@@ -1055,7 +1089,7 @@ button {
 
   .footer-bottom {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .lightbox-close {
@@ -1080,4 +1114,87 @@ body[dir="ltr"] .faq-question::after {
 body[dir="ltr"] .site-nav a::after {
   left: 0;
   right: 0;
+}
+
+@media (max-width: 520px) {
+  .header-top {
+    align-items: flex-start;
+  }
+
+  .brand {
+    flex: 1 1 100%;
+  }
+
+  .brand-name {
+    font-size: 0.86rem;
+  }
+
+  .header-actions {
+    gap: 0.4rem;
+  }
+
+  .header-actions .btn-small,
+  .header-actions .lang-toggle {
+    font-size: 0.84rem;
+    padding: 0.62rem 0.72rem;
+  }
+
+  .floating-whatsapp {
+    padding: 0.82rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+.youtube-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.youtube-card,
+.youtube-video-card {
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.74);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow);
+}
+
+.youtube-card {
+  padding: 2rem;
+}
+
+.youtube-card h2 {
+  margin: 1rem 0 0;
+  font-size: clamp(1.35rem, 2.2vw, 2rem);
+  line-height: 1.4;
+}
+
+.youtube-card p {
+  margin: 0.9rem 0 0;
+  color: var(--text-soft);
+  line-height: 1.9;
+}
+
+.youtube-actions {
+  margin-top: 1.5rem;
+}
+
+.youtube-video-card {
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.youtube-video-card iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 24px;
+  display: block;
+  background: #000;
+}
+
+@media (max-width: 900px) {
+  .youtube-grid {
+    grid-template-columns: 1fr;
+  }
 }

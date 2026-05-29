@@ -3,49 +3,54 @@ const content = {
     title: "عيادة الدكتور مهدي صالح بلاسم للطب النفسي والعصبي",
     brandName: "عيادة الدكتور مهدي صالح بلاسم للطب النفسي والعصبي",
     navHome: "الرئيسية",
-    navAbout: "عن العيادة",
+    navAbout: "عن الدكتور",
     navServices: "الخدمات",
     navCertificates: "الشهادات",
     navGallery: "المعرض",
+	navYoutube: "يوتيوب",
+youtubeTag: "قناة الدكتور",
+youtubeTitle: "فيديوهات توعوية ولقاءات للدكتور",
+youtubeIntro: "يمكنكم متابعة قناة الدكتور على يوتيوب لمشاهدة اللقاءات والمقاطع التوعوية المتعلقة بالصحة النفسية والعصبية.",
+youtubeButton: "زيارة قناة اليوتيوب",
     navFaq: "الأسئلة الشائعة",
     navContact: "التواصل",
     headerWhatsapp: "واتساب",
     heroEyebrow: "رعاية مهنية في بيئة دافئة وآمنة",
     heroTitle: "عيادة د. مهدي صالح بلاسم للطب النفسي والعصبي",
-    heroText: "تهدف العيادة إلى مساعدة المراجعين على تحسين صحتهم النفسية من خلال التقييم الدقيق، ووضع خطة علاجية مناسبة لكل حالة، والمتابعة الطبية المستمرة, تعتمد العيادة على مجموعة من التقنيات العلاجية الحديثة المعتمدة علمياً في مجال الصحة النفسية.",
+    heroText: "تقدم العيادة رعاية نفسية وعصبية مهنية تعتمد على التقييم الدقيق، ووضع خطة علاجية مناسبة لكل حالة، مع متابعة طبية مستمرة في بيئة تحترم الخصوصية والسرية.",
     btnWhatsapp: "احجز عبر واتساب",
     btnCall: "اتصل الآن",
     btnMap: "الموقع على الخريطة",
     btnOpenMap: "افتح الخريطة",
     heroBadgeTitle: "الطب النفسي والعصبي",
     heroBadgeText: "ثقة، خصوصية، ومتابعة مهنية",
-    aboutTag: "الخدمات الصحية التي تقدمها العيادة",
-    aboutTitle: "نبذة عن الخدمات الصحية والنفسية في العيادة",
-    aboutText1: "تقدم العيادة خدمات متخصصة في تشخيص وعلاج عدد من الاضطرابات النفسية والعصبية باستخدام أساليب علاجية حديثة مبنية على أسس علمية، في بيئة مهنية تحترم الخصوصية والسرية الطبية.",
-    aboutText2: "يركز نهج العيادة على التقييم الدقيق، ووضع خطة علاجية مناسبة لكل حالة، مع المتابعة الطبية المستمرة ودعم المراجعين لفهم مشكلاتهم والعمل على تحسين جودة حياتهم.",
+    aboutTag: "عن الدكتور",
+    aboutTitle: "نبذة مهنية مختصرة",
+    aboutText1: "د. مهدي صالح بلاسم طبيب مختص في الطب النفسي والعصبي، ويقدم خدمات تشخيصية وعلاجية لمجموعة من الاضطرابات النفسية والعصبية ضمن إطار طبي مهني يراعي خصوصية المراجع وسرية المعلومات.",
+    aboutText2: "يركز أسلوب العيادة على فهم الحالة بشكل دقيق، ومناقشة الخطة العلاجية المناسبة، ثم المتابعة المنتظمة لمساعدة المراجع على تحسين جودة حياته والتعامل مع الصعوبات النفسية بصورة أكثر توازناً.",
     statOneTitle: "تقييم دقيق",
-    statOneText: "خطة علاجية مناسبة لكل حالة",
+    statOneText: "فهم الحالة قبل اختيار الخطة العلاجية",
     statTwoTitle: "بيئة آمنة",
     statTwoText: "خصوصية وسرية طبية محترمة",
     statThreeTitle: "متابعة مستمرة",
-    statThreeText: "رعاية مبنية على الخبرة العلمية",
-    methodsTag: "الأساليب العلاجية",
-    methodsTitle: "تقنيات علاجية حديثة معتمدة علمياً",
+    statThreeText: "رعاية مبنية على الخبرة والأسس العلمية",
+    methodsTag: "النهج العلاجي",
+    methodsTitle: "أساليب علاجية حديثة ومعتمدة علمياً",
     servicesTag: "الخدمات الرئيسية",
     servicesTitle: "الخدمات الرئيسية",
-    servicesIntro: "الخدمات التالية تم اعتمادها في النسخة الحالية من الموقع، ويمكن توسيعها لاحقاً.",
+    servicesIntro: "خدمات نفسية وعصبية مصممة لمساعدة المراجعين على فهم حالتهم واختيار المسار العلاجي المناسب.",
     certTag: "الشهادات",
     certTitle: "الشهادات والمؤهلات",
-    certIntro: "تمت إضافة صور الشهادات التقديرية وشهادات المشاركة من ملفات المشروع، بينما بقيت الشهادات الأكاديمية كنصوص حالياً إلى حين تزويد الصور الرسمية.",
+    certIntro: "يعرض هذا القسم المؤهلات والشهادات المهنية المتوفرة حالياً، مع إمكانية تحديث الصور أو إضافة شهادات جديدة لاحقاً.",
     certTabAcademic: "الشهادات الأكاديمية والدورات",
     certTabHonorary: "الشهادات التقديرية",
     certTabParticipation: "شهادات المشاركة",
-    galleryTag: "  معرض الصور واللقاءات  ",
+    galleryTag: "معرض الصور واللقاءات",
     galleryTitle: "اللقاءات والمشاركات",
-    galleryIntro: "تم ربط صور المعرض المرفقة مباشرة داخل هذا القسم. اضغط على أي صورة لعرضها بحجم أكبر.",
+    galleryIntro: "صور من المشاركات والأنشطة المهنية واللقاءات. اضغط على أي صورة لعرضها بحجم أكبر.",
     faqTag: "الأسئلة الشائعة",
-    faqTitle: "هيكل جاهز للتعبئة والتحديث",
-    faqIntro: "يمكن تعديل هذه الأسئلة وإجاباتها لاحقاً حسب توجيهات الدكتور وطبيعة العمل داخل العيادة.",
+    faqTitle: "أسئلة تساعدك قبل الزيارة",
+    faqIntro: "إجابات مختصرة عن الحجز، الموقع، الخصوصية، وطبيعة التواصل مع العيادة.",
     contactTag: "التواصل والحجز",
     contactTitle: "الوصول السريع إلى العيادة",
     contactIntro: "يفضل الحجز المسبق عبر الهاتف أو واتساب لتحديد الموعد المناسب.",
@@ -55,21 +60,21 @@ const content = {
     contactAddressLabel: "العنوان",
     contactAddressValue: "بغداد - شارع فلسطين - ساحة بيروت - مجمع المدينة الطبي - فوق صيدلية هرم المدينة - قرب حلويات المن والسلوى",
     footerText: "واجهة عربية/إنجليزية دافئة وعصرية تركز على الثقة والراحة وسهولة الوصول للمعلومات الأساسية.",
-    footerQuickLinks: "روابط سريعة",
+    footerQuickLinks: "روابط سريعة:",
     footerContact: "الموقع ورقم العيادة:",
     footerAddress: "بغداد - ساحة بيروت - مجمع المدينة الطبي - للإتصال : 07713295841",
-
+    footerDisclaimer: "الموقع مخصص للتعريف بالعيادة وتسهيل الحجز، ولا يغني عن الاستشارة الطبية المباشرة أو مراجعة الطوارئ عند الحاجة.",
     floatingWhatsapp: "واتساب",
     clickToZoom: "اضغط للتكبير",
     trust: [
       { title: "خصوصية وسرية", text: "بيئة مهنية تحترم سرية المعلومات والاستشارة الطبية." },
-      { title: "مؤهلات معتمدة", text: "بورد ودورات تخصصية معتمدة في الطب النفسي والعصبي." },
-      { title: "موقع واضح", text: "الوصول إلى العيادة سهل مع خريطة مدمجة وروابط مباشرة." }
+      { title: "مؤهلات معتمدة", text: "مؤهلات ودورات تخصصية في الطب النفسي والعصبي." },
+      { title: "وصول سهل", text: "موقع واضح مع خريطة مدمجة وروابط مباشرة للحجز." }
     ],
     methods: [
-      { title: "CBT", text: "يعد من أكثر العلاجات النفسية فعالية وانتشاراً في العالم، ويهدف إلى مساعدة المراجع على فهم العلاقة بين الأفكار والمشاعر والسلوك، وتعلم مهارات عملية لتعديل الأفكار السلبية والأنماط السلوكية غير المفيدة. يستخدم هذا العلاج بشكل واسع في علاج القلق والاكتئاب ونوبات الهلع والوسواس القهري." },
-      { title: "EMDR", text: "تقنية علاجية حديثة تستخدم في علاج الصدمات النفسية واضطراب ما بعد الصدمة (PTSD). تعتمد هذه الطريقة على مساعدة الدماغ في إعادة معالجة الذكريات المؤلمة بطريقة صحية، مما يخفف من تأثيرها النفسي ويساعد الشخص على استعادة الشعور بالأمان والتوازن النفسي." },
-      { title: "DBT", text: "أسلوب علاجي متطور يركز على تطوير مهارات تنظيم المشاعر، تحمل الضغوط، تحسين العلاقات، وتنمية الوعي الذهني. يستخدم هذا العلاج في التعامل مع بعض اضطرابات الشخصية وصعوبات التحكم في الانفعالات." }
+      { title: "CBT", text: "العلاج المعرفي السلوكي يساعد المراجع على فهم العلاقة بين الأفكار والمشاعر والسلوك، وتعلم مهارات عملية للتعامل مع القلق والاكتئاب ونوبات الهلع والوسواس القهري." },
+      { title: "EMDR", text: "تقنية علاجية حديثة تستخدم في التعامل مع الصدمات النفسية واضطراب ما بعد الصدمة، وتهدف إلى تخفيف أثر الذكريات المؤلمة وإعادة معالجتها بصورة صحية." },
+      { title: "DBT", text: "أسلوب علاجي يركز على تنظيم المشاعر، تحمل الضغوط، تحسين العلاقات، وتنمية الوعي الذهني، ويستخدم في بعض الحالات التي تحتاج إلى تدريب مهاري مستمر." }
     ],
     services: [
       { title: "الاكتئاب", text: "تقييم وتشخيص ومتابعة للحالات المرتبطة بالاكتئاب بأسلوب علاجي مناسب.", icon: "🧠" },
@@ -95,38 +100,38 @@ const content = {
         { title: "بناء الفريق وحل المشاكل", text: "بغداد - مركز التدريب والتطوير.", meta: "تطوير مهني" }
       ],
       honorary: [
-        { title: "شهادة تقديرية 1", text: "صورة مضافة من ملفات المشروع للشهادات التقديرية.", meta: "شهادة تقديرية", image: "assets/Certifcate_of_Award_0.jpg" },
-        { title: "شهادة تقديرية 2", text: "صورة مضافة من ملفات المشروع للشهادات التقديرية.", meta: "شهادة تقديرية", image: "assets/Certifcate_of_Award_1.jpg" },
-        { title: "شهادة تقديرية 3", text: "صورة مضافة من ملفات المشروع للشهادات التقديرية.", meta: "شهادة تقديرية", image: "assets/Certifcate_of_Award_2.jpg" },
-        { title: "شهادة تقديرية 4", text: "صورة مضافة من ملفات المشروع للشهادات التقديرية.", meta: "شهادة تقديرية", image: "assets/Certifcate_of_Award_3.jpg" },
-        { title: "شهادة تقديرية 5", text: "صورة مضافة من ملفات المشروع للشهادات التقديرية.", meta: "شهادة تقديرية", image: "assets/Certifcate_of_Award_4.jpg" }
+        { title: "شهادة تقديرية 1", text: "شهادة تقديرية مضافة من ملفات المشروع.", meta: "شهادة تقديرية", image: "assets/Certifcate_of_Award_0.jpg" },
+        { title: "شهادة تقديرية 2", text: "شهادة تقديرية مضافة من ملفات المشروع.", meta: "شهادة تقديرية", image: "assets/Certifcate_of_Award_1.jpg" },
+        { title: "شهادة تقديرية 3", text: "شهادة تقديرية مضافة من ملفات المشروع.", meta: "شهادة تقديرية", image: "assets/Certifcate_of_Award_2.jpg" },
+        { title: "شهادة تقديرية 4", text: "شهادة تقديرية مضافة من ملفات المشروع.", meta: "شهادة تقديرية", image: "assets/Certifcate_of_Award_3.jpg" },
+        { title: "شهادة تقديرية 5", text: "شهادة تقديرية مضافة من ملفات المشروع.", meta: "شهادة تقديرية", image: "assets/Certifcate_of_Award_4.jpg" }
       ],
       participation: [
-        { title: "شهادة مشاركة 1", text: "صورة مضافة من ملفات المشروع لشهادات المشاركة.", meta: "شهادة مشاركة", image: "assets/Certifcate_of_Participation_0.jpg" },
-        { title: "شهادة مشاركة 2", text: "صورة مضافة من ملفات المشروع لشهادات المشاركة.", meta: "شهادة مشاركة", image: "assets/Certifcate_of_Participation_1.jpg" },
-        { title: "شهادة مشاركة 3", text: "صورة مضافة من ملفات المشروع لشهادات المشاركة.", meta: "شهادة مشاركة", image: "assets/Certifcate_of_Participation_2.jpg" },
-        { title: "شهادة مشاركة 4", text: "صورة مضافة من ملفات المشروع لشهادات المشاركة.", meta: "شهادة مشاركة", image: "assets/Certifcate_of_Participation_3.jpg" },
-        { title: "شهادة مشاركة 5", text: "صورة مضافة من ملفات المشروع لشهادات المشاركة.", meta: "شهادة مشاركة", image: "assets/Certifcate_of_Participation_4.jpg" },
-        { title: "شهادة مشاركة 6", text: "صورة مضافة من ملفات المشروع لشهادات المشاركة.", meta: "شهادة مشاركة", image: "assets/Certifcate_of_Participation_5.jpg" },
-        { title: "شهادة مشاركة 7", text: "صورة مضافة من ملفات المشروع لشهادات المشاركة.", meta: "شهادة مشاركة", image: "assets/Certifcate_of_Participation_6.jpg" }
+        { title: "شهادة مشاركة 1", text: "شهادة مشاركة مضافة من ملفات المشروع.", meta: "شهادة مشاركة", image: "assets/Certifcate_of_Participation_0.jpg" },
+        { title: "شهادة مشاركة 2", text: "شهادة مشاركة مضافة من ملفات المشروع.", meta: "شهادة مشاركة", image: "assets/Certifcate_of_Participation_1.jpg" },
+        { title: "شهادة مشاركة 3", text: "شهادة مشاركة مضافة من ملفات المشروع.", meta: "شهادة مشاركة", image: "assets/Certifcate_of_Participation_2.jpg" },
+        { title: "شهادة مشاركة 4", text: "شهادة مشاركة مضافة من ملفات المشروع.", meta: "شهادة مشاركة", image: "assets/Certifcate_of_Participation_3.jpg" },
+        { title: "شهادة مشاركة 5", text: "شهادة مشاركة مضافة من ملفات المشروع.", meta: "شهادة مشاركة", image: "assets/Certifcate_of_Participation_4.jpg" },
+        { title: "شهادة مشاركة 6", text: "شهادة مشاركة مضافة من ملفات المشروع.", meta: "شهادة مشاركة", image: "assets/Certifcate_of_Participation_5.jpg" },
+        { title: "شهادة مشاركة 7", text: "شهادة مشاركة مضافة من ملفات المشروع.", meta: "شهادة مشاركة", image: "assets/Certifcate_of_Participation_6.jpg" }
       ]
     },
     gallery: [
-      { title: "صورة من المعرض 1", text: "صورة مضافة من ملفات المشروع الخاصة بالمعرض.", image: "assets/Gallery_5.jpeg", featured: true },
-      { title: "صورة من المعرض 2", text: "صورة مضافة من ملفات المشروع الخاصة بالمعرض.", image: "assets/Gallery_1.jpeg" },
-      { title: "صورة من المعرض 3", text: "صورة مضافة من ملفات المشروع الخاصة بالمعرض.", image: "assets/Gallery_2.jpeg" },
-      { title: "صورة من المعرض 4", text: "صورة مضافة من ملفات المشروع الخاصة بالمعرض.", image: "assets/Gallery_3.jpeg" },
-      { title: "صورة من المعرض 5", text: "صورة مضافة من ملفات المشروع الخاصة بالمعرض.", image: "assets/Gallery_4.jpeg" },
-      { title: "صورة من المعرض 6", text: "صورة مضافة من ملفات المشروع الخاصة بالمعرض.", image: "assets/Gallery_0.jpeg", featured: true },
-      { title: "صورة من المعرض 7", text: "صورة مضافة من ملفات المشروع الخاصة بالمعرض.", image: "assets/Gallery_6.jpeg" },
-      { title: "صورة من المعرض 8", text: "صورة مضافة من ملفات المشروع الخاصة بالمعرض.", image: "assets/Gallery_7.jpeg" }
+      { title: "نشاط مهني 1", text: "صورة من المشاركات أو اللقاءات المهنية الخاصة بالدكتور.", image: "assets/Gallery_5.jpeg", featured: true },
+      { title: "نشاط مهني 2", text: "صورة من المشاركات أو اللقاءات المهنية الخاصة بالدكتور.", image: "assets/Gallery_1.jpeg" },
+      { title: "نشاط مهني 3", text: "صورة من المشاركات أو اللقاءات المهنية الخاصة بالدكتور.", image: "assets/Gallery_2.jpeg" },
+      { title: "نشاط مهني 4", text: "صورة من المشاركات أو اللقاءات المهنية الخاصة بالدكتور.", image: "assets/Gallery_3.jpeg" },
+      { title: "نشاط مهني 5", text: "صورة من المشاركات أو اللقاءات المهنية الخاصة بالدكتور.", image: "assets/Gallery_4.jpeg" },
+      { title: "نشاط مهني 6", text: "صورة من المشاركات أو اللقاءات المهنية الخاصة بالدكتور.", image: "assets/Gallery_0.jpeg", featured: true },
+      { title: "نشاط مهني 7", text: "صورة من المشاركات أو اللقاءات المهنية الخاصة بالدكتور.", image: "assets/Gallery_6.jpeg" },
+      { title: "نشاط مهني 8", text: "صورة من المشاركات أو اللقاءات المهنية الخاصة بالدكتور.", image: "assets/Gallery_7.jpeg" }
     ],
     faq: [
       { q: "كيف يتم الحجز؟", a: "يفضل الحجز المسبق عبر الهاتف أو واتساب لتحديد الموعد المناسب." },
       { q: "هل يوجد تواصل عبر واتساب؟", a: "نعم، يمكن التواصل عبر واتساب على الرقم نفسه المخصص للحجز والاستفسار." },
       { q: "أين تقع العيادة؟", a: "تقع العيادة في بغداد - شارع فلسطين - ساحة بيروت - مجمع المدينة الطبي - فوق صيدلية هرم المدينة - قرب حلويات المن والسلوى." },
-      { q: "هل المعلومات تبقى سرية؟", a: "نعم، جميع الاستشارات تتم في بيئة مهنية تحترم الخصوصية والسرية الطبية." },
-      { q: "هل هذه الصفحة نهائية؟", a: "هذه نسخة قابلة للتطوير، ويمكن استبدال صور المعرض أو الشهادات الحالية بأي صور جديدة لاحقاً بسهولة." }
+      { q: "هل معلومات المراجع تبقى سرية؟", a: "نعم، تتم الاستشارات ضمن إطار مهني يحترم الخصوصية والسرية الطبية." },
+      { q: "هل الموقع يغني عن مراجعة الطبيب؟", a: "لا، الموقع مخصص للتعريف بالعيادة وتسهيل الحجز، ولا يعد بديلاً عن الاستشارة الطبية المباشرة أو مراجعة الطوارئ عند الحاجة." }
     ],
     copyright: year => `© ${year} عيادة د. مهدي صالح بلاسم للطب النفسي والعصبي. جميع الحقوق محفوظة.`
   },
@@ -134,49 +139,54 @@ const content = {
     title: "Dr. Mahdi Saleh Blasim Clinic for Psychiatry and Neurology",
     brandName: "Dr. Mahdi Saleh Blasim Clinic for Psychiatry and Neurology",
     navHome: "Home",
-    navAbout: "About",
+    navAbout: "About the Doctor",
     navServices: "Services",
     navCertificates: "Certificates",
     navGallery: "Gallery",
+	navYoutube: "YouTube",
+youtubeTag: "Doctor's Channel",
+youtubeTitle: "Awareness Videos and Media Appearances",
+youtubeIntro: "You can follow the doctor's YouTube channel to watch awareness videos and media appearances related to mental and neurological health.",
+youtubeButton: "Visit YouTube Channel",
     navFaq: "FAQ",
     navContact: "Contact",
     headerWhatsapp: "WhatsApp",
     heroEyebrow: "Professional care in a warm and safe environment",
     heroTitle: "Dr. Mahdi Saleh Blasim Clinic for Psychiatry and Neurology",
-    heroText: "A modern bilingual website focused on reassurance, trust, and easy access to the doctor's profile, services, certificates, and clinic location.",
+    heroText: "The clinic provides professional psychiatric and neurological care through careful assessment, personalized treatment planning, and ongoing follow-up in a confidential and supportive environment.",
     btnWhatsapp: "Book via WhatsApp",
     btnCall: "Call Now",
     btnMap: "View Map",
     btnOpenMap: "Open Map",
     heroBadgeTitle: "Psychiatry & Neurology",
     heroBadgeText: "Trust, privacy, and professional follow-up",
-    aboutTag: "About",
-    aboutTitle: "A professional profile with a warm human tone",
-    aboutText1: "The clinic provides specialized psychiatric and neurological assessment and care using modern evidence-based therapeutic approaches in a professional environment that respects privacy and confidentiality.",
-    aboutText2: "The clinic's approach emphasizes careful assessment, a suitable treatment plan for each case, ongoing medical follow-up, and helping patients better understand their difficulties and improve quality of life.",
+    aboutTag: "About the Doctor",
+    aboutTitle: "A concise professional profile",
+    aboutText1: "Dr. Mahdi Saleh Blasim is a physician specialized in psychiatry and neurology, providing diagnostic and therapeutic care for a range of psychiatric and neurological conditions within a professional setting that respects patient privacy and confidentiality.",
+    aboutText2: "The clinic approach focuses on understanding each case carefully, discussing the suitable treatment plan, and providing regular follow-up to help patients improve quality of life and manage psychological difficulties more effectively.",
     statOneTitle: "Careful Assessment",
-    statOneText: "A suitable plan for each case",
+    statOneText: "Understanding the case before choosing the treatment plan",
     statTwoTitle: "Safe Environment",
     statTwoText: "Privacy and medical confidentiality",
     statThreeTitle: "Ongoing Follow-up",
-    statThreeText: "Care guided by scientific expertise",
-    methodsTag: "Therapeutic Methods",
-    methodsTitle: "Modern evidence-based approaches",
-    servicesTag: "Services",
+    statThreeText: "Care guided by experience and evidence-based practice",
+    methodsTag: "Therapeutic Approach",
+    methodsTitle: "Modern evidence-based therapeutic methods",
+    servicesTag: "Main Services",
     servicesTitle: "Main Services",
-    servicesIntro: "The following services are included in the current version of the website and can be expanded later as needed.",
+    servicesIntro: "Psychiatric and neurological services designed to help patients understand their condition and choose the appropriate treatment path.",
     certTag: "Certificates",
     certTitle: "Certificates and Qualifications",
-    certIntro: "Award and participation certificate images are now linked from the provided project files, while the academic certificates remain text-based until the official images are supplied.",
+    certIntro: "This section presents the currently available professional qualifications and certificates, with room to update images or add new certificates later.",
     certTabAcademic: "Academic & Courses",
-    certTabHonorary: "Award",
+    certTabHonorary: "Awards",
     certTabParticipation: "Participation",
-    galleryTag: "Gallery",
+    galleryTag: "Gallery and Appearances",
     galleryTitle: "Media Appearances and Professional Activities",
-    galleryIntro: "The provided gallery images are now connected directly to this section. Click any image to view it larger.",
+    galleryIntro: "Photos from professional activities and appearances. Click any image to view it larger.",
     faqTag: "FAQ",
-    faqTitle: "Ready structure for future updates",
-    faqIntro: "These questions and answers can be refined later according to the doctor's preferences and clinic workflow.",
+    faqTitle: "Helpful questions before your visit",
+    faqIntro: "Short answers about booking, location, privacy, and communication with the clinic.",
     contactTag: "Contact & Booking",
     contactTitle: "Fast access to the clinic",
     contactIntro: "Advance booking by phone or WhatsApp is preferred to arrange a suitable appointment.",
@@ -186,21 +196,22 @@ const content = {
     contactAddressLabel: "Address",
     contactAddressValue: "Baghdad - Palestine Street - Beirut Square - Al Madina Medical Complex - above Haram Al Madina Pharmacy - near Al Mann wa Al Salwa sweets",
     footerText: "A warm, modern Arabic/English interface focused on trust, comfort, and quick access to the essential clinic information.",
-    footerQuickLinks: "Quick Links",
-    footerContact: "Contact",
-    footerAddress: "Baghdad - Beirut Square - Al Madina Medical Complex",
+    footerQuickLinks: "Quick Links:",
+    footerContact: "Location and clinic number:",
+    footerAddress: "Baghdad - Beirut Square - Al Madina Medical Complex - Phone: 07713295841",
+    footerDisclaimer: "This website is for clinic information and appointment booking only. It does not replace direct medical consultation or emergency care when needed.",
     footerHours: "Daily except Friday and Monday",
     floatingWhatsapp: "WhatsApp",
     clickToZoom: "Click to enlarge",
     trust: [
-      { title: "Privacy & Confidentiality", text: "A professional environment that respects the privacy of medical consultations and patient information." },
-      { title: "Recognized Qualifications", text: "Board certification and specialized psychiatric and neurological training." },
-      { title: "Easy Access", text: "A clear location with embedded map and direct booking links." }
+      { title: "Privacy & Confidentiality", text: "A professional environment that respects medical consultation and patient information privacy." },
+      { title: "Recognized Qualifications", text: "Qualifications and specialized training in psychiatry and neurology." },
+      { title: "Easy Access", text: "A clear location with an embedded map and direct booking links." }
     ],
     methods: [
-      { title: "CBT", text: "Cognitive Behavioral Therapy, widely used for anxiety, depression, panic attacks, and obsessive-compulsive symptoms." },
-      { title: "EMDR", text: "A modern therapeutic approach used in trauma treatment and post-traumatic stress-related conditions." },
-      { title: "DBT", text: "A therapeutic approach focused on emotion regulation, distress tolerance, and improving relationships." }
+      { title: "CBT", text: "Cognitive Behavioral Therapy helps patients understand the relationship between thoughts, emotions, and behavior, and learn practical skills for anxiety, depression, panic attacks, and obsessive-compulsive symptoms." },
+      { title: "EMDR", text: "A modern therapeutic method used in trauma-related conditions and post-traumatic stress, aiming to reduce the emotional impact of painful memories." },
+      { title: "DBT", text: "A therapeutic approach focused on emotion regulation, distress tolerance, relationship skills, and mindfulness, especially in cases that benefit from structured skill training." }
     ],
     services: [
       { title: "Depression", text: "Assessment, diagnosis, and follow-up for depression-related conditions with an appropriate treatment plan.", icon: "🧠" },
@@ -226,38 +237,38 @@ const content = {
         { title: "Team Building and Problem Solving", text: "Baghdad - Training and Development Center.", meta: "Professional Development" }
       ],
       honorary: [
-        { title: "Award Certificate 1", text: "Image added from the provided project files.", meta: "Award Certificate", image: "assets/Certifcate_of_Award_0.jpg" },
-        { title: "Award Certificate 2", text: "Image added from the provided project files.", meta: "Award Certificate", image: "assets/Certifcate_of_Award_1.jpg" },
-        { title: "Award Certificate 3", text: "Image added from the provided project files.", meta: "Award Certificate", image: "assets/Certifcate_of_Award_2.jpg" },
-        { title: "Award Certificate 4", text: "Image added from the provided project files.", meta: "Award Certificate", image: "assets/Certifcate_of_Award_3.jpg" },
-        { title: "Award Certificate 5", text: "Image added from the provided project files.", meta: "Award Certificate", image: "assets/Certifcate_of_Award_4.jpg" }
+        { title: "Award Certificate 1", text: "Award certificate added from the provided project files.", meta: "Award Certificate", image: "assets/Certifcate_of_Award_0.jpg" },
+        { title: "Award Certificate 2", text: "Award certificate added from the provided project files.", meta: "Award Certificate", image: "assets/Certifcate_of_Award_1.jpg" },
+        { title: "Award Certificate 3", text: "Award certificate added from the provided project files.", meta: "Award Certificate", image: "assets/Certifcate_of_Award_2.jpg" },
+        { title: "Award Certificate 4", text: "Award certificate added from the provided project files.", meta: "Award Certificate", image: "assets/Certifcate_of_Award_3.jpg" },
+        { title: "Award Certificate 5", text: "Award certificate added from the provided project files.", meta: "Award Certificate", image: "assets/Certifcate_of_Award_4.jpg" }
       ],
       participation: [
-        { title: "Participation Certificate 1", text: "Image added from the provided project files.", meta: "Participation Certificate", image: "assets/Certifcate_of_Participation_0.jpg" },
-        { title: "Participation Certificate 2", text: "Image added from the provided project files.", meta: "Participation Certificate", image: "assets/Certifcate_of_Participation_1.jpg" },
-        { title: "Participation Certificate 3", text: "Image added from the provided project files.", meta: "Participation Certificate", image: "assets/Certifcate_of_Participation_2.jpg" },
-        { title: "Participation Certificate 4", text: "Image added from the provided project files.", meta: "Participation Certificate", image: "assets/Certifcate_of_Participation_3.jpg" },
-        { title: "Participation Certificate 5", text: "Image added from the provided project files.", meta: "Participation Certificate", image: "assets/Certifcate_of_Participation_4.jpg" },
-        { title: "Participation Certificate 6", text: "Image added from the provided project files.", meta: "Participation Certificate", image: "assets/Certifcate_of_Participation_5.jpg" },
-        { title: "Participation Certificate 7", text: "Image added from the provided project files.", meta: "Participation Certificate", image: "assets/Certifcate_of_Participation_6.jpg" }
+        { title: "Participation Certificate 1", text: "Participation certificate added from the provided project files.", meta: "Participation Certificate", image: "assets/Certifcate_of_Participation_0.jpg" },
+        { title: "Participation Certificate 2", text: "Participation certificate added from the provided project files.", meta: "Participation Certificate", image: "assets/Certifcate_of_Participation_1.jpg" },
+        { title: "Participation Certificate 3", text: "Participation certificate added from the provided project files.", meta: "Participation Certificate", image: "assets/Certifcate_of_Participation_2.jpg" },
+        { title: "Participation Certificate 4", text: "Participation certificate added from the provided project files.", meta: "Participation Certificate", image: "assets/Certifcate_of_Participation_3.jpg" },
+        { title: "Participation Certificate 5", text: "Participation certificate added from the provided project files.", meta: "Participation Certificate", image: "assets/Certifcate_of_Participation_4.jpg" },
+        { title: "Participation Certificate 6", text: "Participation certificate added from the provided project files.", meta: "Participation Certificate", image: "assets/Certifcate_of_Participation_5.jpg" },
+        { title: "Participation Certificate 7", text: "Participation certificate added from the provided project files.", meta: "Participation Certificate", image: "assets/Certifcate_of_Participation_6.jpg" }
       ]
     },
     gallery: [
-      { title: "Gallery Photo 1", text: "Image added from the provided project files.", image: "assets/Gallery_0.jpeg", featured: true },
-      { title: "Gallery Photo 2", text: "Image added from the provided project files.", image: "assets/Gallery_1.jpeg" },
-      { title: "Gallery Photo 3", text: "Image added from the provided project files.", image: "assets/Gallery_2.jpeg" },
-      { title: "Gallery Photo 4", text: "Image added from the provided project files.", image: "assets/Gallery_3.jpeg" },
-      { title: "Gallery Photo 5", text: "Image added from the provided project files.", image: "assets/Gallery_4.jpeg" },
-      { title: "Gallery Photo 6", text: "Image added from the provided project files.", image: "assets/Gallery_5.jpeg", featured: true },
-      { title: "Gallery Photo 7", text: "Image added from the provided project files.", image: "assets/Gallery_6.jpeg" },
-      { title: "Gallery Photo 8", text: "Image added from the provided project files.", image: "assets/Gallery_7.jpeg" }
+      { title: "Professional Activity 1", text: "A photo from the doctor's professional activities or appearances.", image: "assets/Gallery_0.jpeg", featured: true },
+      { title: "Professional Activity 2", text: "A photo from the doctor's professional activities or appearances.", image: "assets/Gallery_1.jpeg" },
+      { title: "Professional Activity 3", text: "A photo from the doctor's professional activities or appearances.", image: "assets/Gallery_2.jpeg" },
+      { title: "Professional Activity 4", text: "A photo from the doctor's professional activities or appearances.", image: "assets/Gallery_3.jpeg" },
+      { title: "Professional Activity 5", text: "A photo from the doctor's professional activities or appearances.", image: "assets/Gallery_4.jpeg" },
+      { title: "Professional Activity 6", text: "A photo from the doctor's professional activities or appearances.", image: "assets/Gallery_5.jpeg", featured: true },
+      { title: "Professional Activity 7", text: "A photo from the doctor's professional activities or appearances.", image: "assets/Gallery_6.jpeg" },
+      { title: "Professional Activity 8", text: "A photo from the doctor's professional activities or appearances.", image: "assets/Gallery_7.jpeg" }
     ],
     faq: [
       { q: "How is booking handled?", a: "Advance booking by phone or WhatsApp is preferred to arrange a suitable appointment." },
       { q: "Is WhatsApp available?", a: "Yes. WhatsApp can be used for booking and inquiries through the same clinic number." },
       { q: "Where is the clinic located?", a: "The clinic is located in Baghdad - Palestine Street - Beirut Square - Al Madina Medical Complex - above Haram Al Madina Pharmacy - near Al Mann wa Al Salwa sweets." },
-      { q: "Will my information remain confidential?", a: "Yes. All consultations are provided in a professional setting that respects privacy and medical confidentiality." },
-      { q: "Is this the final version of the website?", a: "This is a flexible version that can be expanded later, and the current gallery/certificate images can be replaced easily." }
+      { q: "Will patient information remain confidential?", a: "Yes. Consultations are provided in a professional setting that respects privacy and medical confidentiality." },
+      { q: "Does this website replace a medical visit?", a: "No. This website is for clinic information and appointment booking only. It does not replace direct medical consultation or emergency care when needed." }
     ],
     copyright: year => `© ${year} Dr. Mahdi Saleh Blasim Clinic for Psychiatry and Neurology. All rights reserved.`
   }
@@ -288,6 +299,8 @@ function setStaticText(lang) {
   document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
   document.body.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
   document.title = content[lang].title;
+  langToggle.textContent = lang === "ar" ? "AR | EN" : "EN | AR";
+  langToggle.setAttribute("aria-label", lang === "ar" ? "Switch language to English" : "تبديل اللغة إلى العربية");
 
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.dataset.i18n;
@@ -319,13 +332,19 @@ function renderMethods(lang) {
 }
 
 function renderServices(lang) {
-  servicesGrid.innerHTML = content[lang].services.map(item => `
-    <article class="service-card">
-      <div class="service-icon">${item.icon || "🩺"}</div>
-      <h3>${item.title}</h3>
-      <p>${item.text}</p>
-    </article>
-  `).join("");
+  servicesGrid.innerHTML = content[lang].services.map(item => {
+    const iconMarkup = item.icon && /\.(svg|png|jpg|jpeg|webp)$/i.test(item.icon)
+      ? `<img src="${item.icon}" alt="" aria-hidden="true" loading="lazy" />`
+      : `<span aria-hidden="true">${item.icon || "✦"}</span>`;
+
+    return `
+      <article class="service-card">
+        <div class="service-icon">${iconMarkup}</div>
+        <h3>${item.title}</h3>
+        <p>${item.text}</p>
+      </article>
+    `;
+  }).join("");
 }
 
 function createInteractiveCard(item, className) {
@@ -394,6 +413,11 @@ function renderAll() {
   });
 }
 
+function syncBodyLock() {
+  const shouldLock = siteNav.classList.contains("open") || lightbox.classList.contains("open");
+  document.body.classList.toggle("is-locked", shouldLock);
+}
+
 function openLightbox({ image, title, text }) {
   lightboxImage.src = image;
   lightboxImage.alt = title;
@@ -401,14 +425,14 @@ function openLightbox({ image, title, text }) {
   lightboxText.textContent = text;
   lightbox.classList.add("open");
   lightbox.setAttribute("aria-hidden", "false");
-  document.body.classList.add("is-locked");
+  syncBodyLock();
 }
 
 function closeLightbox() {
   lightbox.classList.remove("open");
   lightbox.setAttribute("aria-hidden", "true");
   lightboxImage.src = "";
-  document.body.classList.remove("is-locked");
+  syncBodyLock();
 }
 
 document.addEventListener("click", (event) => {
@@ -461,14 +485,14 @@ certTabs.addEventListener("click", (event) => {
 menuToggle.addEventListener("click", () => {
   const isOpen = siteNav.classList.toggle("open");
   menuToggle.setAttribute("aria-expanded", String(isOpen));
-  document.body.classList.toggle("is-locked", isOpen);
+  syncBodyLock();
 });
 
 siteNav.addEventListener("click", (event) => {
   if (event.target.tagName === "A" && siteNav.classList.contains("open")) {
     siteNav.classList.remove("open");
     menuToggle.setAttribute("aria-expanded", "false");
-    document.body.classList.remove("is-locked");
+    syncBodyLock();
   }
 });
 
@@ -478,7 +502,7 @@ window.addEventListener("resize", () => {
   if (window.innerWidth > 900) {
     siteNav.classList.remove("open");
     menuToggle.setAttribute("aria-expanded", "false");
-    document.body.classList.remove("is-locked");
+    syncBodyLock();
   }
 });
 
