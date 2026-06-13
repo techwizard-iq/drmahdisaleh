@@ -75,7 +75,40 @@
         </div>
       </div>
     </section>
+<section class="section" id="youtube">
+  <div class="container youtube-grid">
 
+    <div class="youtube-card">
+      <span class="section-tag" data-i18n="youtubeTag">قناة الدكتور</span>
+      <h2 data-i18n="youtubeTitle">فيديوهات توعوية ولقاءات للدكتور</h2>
+      <p data-i18n="youtubeIntro">
+        يمكنكم متابعة قناة الدكتور على يوتيوب لمشاهدة اللقاءات والمقاطع التوعوية المتعلقة بالصحة النفسية والعصبية.
+      </p>
+
+      <div class="youtube-actions">
+        <a
+          class="btn btn-solid"
+          href="https://www.youtube.com/@%D9%85%D9%87%D8%AF%D9%8A%D8%A8%D9%84%D8%A7%D8%B3%D9%85-%D9%844%D9%85"
+          target="_blank"
+          rel="noopener"
+          data-i18n="youtubeButton">
+          زيارة قناة اليوتيوب
+        </a>
+      </div>
+    </div>
+
+    <div class="youtube-video-card">
+      <iframe
+	    src="https://www.youtube.com/embed/b4EnjAGkFd0?si=wVktnCgkHLRp1kC2"
+        title="YouTube video"
+		referrerpolicy="strict-origin-when-cross-origin"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+  </div>
+</section>
     <section class="section" id="about">
       <div class="container split-grid">
         <div class="content-card">
@@ -129,7 +162,7 @@
           <div>
             <span class="section-tag" data-i18n="certTag">الشهادات</span>
             <h2 data-i18n="certTitle">الشهادات والمؤهلات</h2>
-            <p data-i18n="certIntro">يعرض هذا القسم المؤهلات والشهادات المهنية المتوفرة حالياً، مع إمكانية تحديث الصور أو إضافة شهادات جديدة لاحقاً.</p>
+            <p data-i18n="certIntro">المؤهلات والشهادات المهنية والمشاركات والمؤلفات الخاصة بالدكتور مهدي صالح بلاسم.</p>
           </div>
         </div>
 
@@ -137,6 +170,7 @@
           <button class="active" type="button" data-cert-filter="academic" data-i18n="certTabAcademic">أكاديمية ودورات</button>
           <button type="button" data-cert-filter="honorary" data-i18n="certTabHonorary">تقديرية</button>
           <button type="button" data-cert-filter="participation" data-i18n="certTabParticipation">مشاركة</button>
+          <button type="button" data-cert-filter="research" data-i18n="certTabResearch">البحوث والمؤلفات</button>
         </div>
 
         <div class="cards-grid certificates-grid" id="certCards"></div>
@@ -148,46 +182,13 @@
         <div class="section-head center">
           <span class="section-tag" data-i18n="galleryTag">المعرض</span>
           <h2 data-i18n="galleryTitle">اللقاءات والمشاركات</h2>
-          <p data-i18n="galleryIntro">صور من المشاركات والأنشطة المهنية واللقاءات. اضغط على أي صورة لعرضها بحجم أكبر.</p>
+          <p data-i18n="galleryIntro">جانب من المشاركات والأنشطة المهنية واللقاءات الخاصة بالدكتور مهدي صالح بلاسم. اضغط على أي صورة لعرضها بحجم أكبر.</p>
         </div>
 
         <div class="gallery-grid" id="galleryGrid"></div>
       </div>
     </section>
-<section class="section" id="youtube">
-  <div class="container youtube-grid">
 
-    <div class="youtube-card">
-      <span class="section-tag" data-i18n="youtubeTag">قناة الدكتور</span>
-      <h2 data-i18n="youtubeTitle">فيديوهات توعوية ولقاءات للدكتور</h2>
-      <p data-i18n="youtubeIntro">
-        يمكنكم متابعة قناة الدكتور على يوتيوب لمشاهدة اللقاءات والمقاطع التوعوية المتعلقة بالصحة النفسية والعصبية.
-      </p>
-
-      <div class="youtube-actions">
-        <a
-          class="btn btn-solid"
-          href="https://www.youtube.com/@%D9%85%D9%87%D8%AF%D9%8A%D8%A8%D9%84%D8%A7%D8%B3%D9%85-%D9%844%D9%85"
-          target="_blank"
-          rel="noopener"
-          data-i18n="youtubeButton">
-          زيارة قناة اليوتيوب
-        </a>
-      </div>
-    </div>
-
-    <div class="youtube-video-card">
-      <iframe
-	    src="https://www.youtube.com/embed/b4EnjAGkFd0?si=wVktnCgkHLRp1kC2"
-        title="YouTube video"
-		referrerpolicy="strict-origin-when-cross-origin"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen>
-      </iframe>
-    </div>
-
-  </div>
-</section>
     <section class="section" id="faq">
       <div class="container narrow">
         <div class="section-head center">
@@ -214,7 +215,7 @@
             </div>
             <div class="contact-item">
               <span class="contact-label" data-i18n="contactHoursLabel">أوقات الدوام</span>
-              <span data-i18n="contactHoursValue">يومياً ما عدا الجمعة والأثنين</span>
+              <span data-i18n="contactHoursValue">يومياً ما عدا الجمعة من الساعة الرابعة مساءً ولغاية الثامنة مساءً</span>
             </div>
             <div class="contact-item">
               <span class="contact-label" data-i18n="contactAddressLabel">العنوان</span>

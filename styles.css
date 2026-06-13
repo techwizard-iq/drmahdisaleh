@@ -586,6 +586,44 @@ button {
   padding: 0.35rem;
 }
 
+.link-card::before {
+  display: none;
+}
+
+.link-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 18px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  background: linear-gradient(135deg, rgba(47, 157, 133, 0.18), rgba(47, 157, 133, 0.05));
+  border: 1px solid rgba(47, 157, 133, 0.14);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.cert-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--primary), #3aa88d);
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 10px 22px rgba(47, 157, 133, 0.16);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cert-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 26px rgba(47, 157, 133, 0.22);
+}
+
 .has-media:hover img {
   transform: scale(1.03);
 }

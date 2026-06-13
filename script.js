@@ -41,13 +41,14 @@ youtubeButton: "زيارة قناة اليوتيوب",
     servicesIntro: "خدمات نفسية وعصبية مصممة لمساعدة المراجعين على فهم حالتهم واختيار المسار العلاجي المناسب.",
     certTag: "الشهادات",
     certTitle: "الشهادات والمؤهلات",
-    certIntro: "يعرض هذا القسم المؤهلات والشهادات المهنية المتوفرة حالياً، مع إمكانية تحديث الصور أو إضافة شهادات جديدة لاحقاً.",
+    certIntro: "المؤهلات والشهادات المهنية والمشاركات والمؤلفات الخاصة بالدكتور مهدي صالح بلاسم.",
     certTabAcademic: "الشهادات الأكاديمية والدورات",
     certTabHonorary: "الشهادات التقديرية",
     certTabParticipation: "شهادات المشاركة",
+    certTabResearch: "البحوث والمؤلفات",
     galleryTag: "معرض الصور واللقاءات",
     galleryTitle: "اللقاءات والمشاركات",
-    galleryIntro: "صور من المشاركات والأنشطة المهنية واللقاءات. اضغط على أي صورة لعرضها بحجم أكبر.",
+    galleryIntro: "جانب من المشاركات والأنشطة المهنية واللقاءات الخاصة بالدكتور مهدي صالح بلاسم. اضغط على أي صورة لعرضها بحجم أكبر.",
     faqTag: "الأسئلة الشائعة",
     faqTitle: "أسئلة تساعدك قبل الزيارة",
     faqIntro: "إجابات مختصرة عن الحجز، الموقع، الخصوصية، وطبيعة التواصل مع العيادة.",
@@ -56,7 +57,7 @@ youtubeButton: "زيارة قناة اليوتيوب",
     contactIntro: "يفضل الحجز المسبق عبر الهاتف أو واتساب لتحديد الموعد المناسب.",
     contactPhoneLabel: "الهاتف / واتساب",
     contactHoursLabel: "أوقات الدوام",
-    contactHoursValue: "يوميا ما عدا الجمعة من الساعة الرابعة مساءً ولغاية الثامنة مساءً",
+    contactHoursValue: "يومياً ما عدا الجمعة من الساعة الرابعة مساءً ولغاية الثامنة مساءً",
     contactAddressLabel: "العنوان",
     contactAddressValue: "بغداد - شارع فلسطين - ساحة بيروت - مجمع المدينة الطبي - فوق صيدلية هرم المدينة - قرب حلويات المن والسلوى",
     footerText: "واجهة عربية/إنجليزية دافئة وعصرية تركز على الثقة والراحة وسهولة الوصول للمعلومات الأساسية.",
@@ -90,7 +91,7 @@ youtubeButton: "زيارة قناة اليوتيوب",
     certificates: {
       academic: [
         { title: "بورد (دكتوراه) في الطب النفسي والعصبي", text: "المجلس العراقي للاختصاصات الطبية.", meta: "شهادة أكاديمية" },
-        { title: "CBT - الكلية الملكية البريطانية", text: "كورس العلاج المعرفي السلوكي بإشراف الكلية الملكية البريطانية.", meta: "دورة تخصصية" },
+        { title: "CBT - الكلية الملكية البريطانية", text: "كورس العلاج المعرفي السلوكي بإشراف الكلية الملكية البريطانية.", meta: "دورة تخصصية" , image: "assets/Certifcate_of_Participation_7.jpg"},
         { title: "CBT - جامعة سري البريطانية", text: "برنامج إضافي في العلاج المعرفي السلوكي.", meta: "دورة تخصصية" },
         { title: "برنامج علاج الاكتئاب", text: "الجمعية الأمريكية لعلم النفس (APA).", meta: "برنامج تخصصي" },
         { title: "دبلوم الطب النفسي لكبار السن والمراهقين", text: "California School of Health Science.", meta: "زمالة / دبلوم" },
@@ -100,31 +101,36 @@ youtubeButton: "زيارة قناة اليوتيوب",
         { title: "بناء الفريق وحل المشاكل", text: "بغداد - مركز التدريب والتطوير.", meta: "تطوير مهني" }
       ],
       honorary: [
-        { title: "شهادة تقديرية 1", text: "شهادة تقديرية مضافة من ملفات المشروع.", meta: "شهادة تقديرية", image: "assets/Certifcate_of_Award_0.jpg" },
-        { title: "شهادة تقديرية 2", text: "شهادة تقديرية مضافة من ملفات المشروع.", meta: "شهادة تقديرية", image: "assets/Certifcate_of_Award_1.jpg" },
-        { title: "شهادة تقديرية 3", text: "شهادة تقديرية مضافة من ملفات المشروع.", meta: "شهادة تقديرية", image: "assets/Certifcate_of_Award_2.jpg" },
-        { title: "شهادة تقديرية 4", text: "شهادة تقديرية مضافة من ملفات المشروع.", meta: "شهادة تقديرية", image: "assets/Certifcate_of_Award_3.jpg" },
-        { title: "شهادة تقديرية 5", text: "شهادة تقديرية مضافة من ملفات المشروع.", meta: "شهادة تقديرية", image: "assets/Certifcate_of_Award_4.jpg" }
+        { title: "شهادة تقديرية", text: "شهادة تقديريّة بمناسبة اليوم العالمي للصحّة النفسيّة (2022)من قبل وزارة الصحّة", meta: "شهادة تقديرية", image: "assets/Certifcate_of_Award_0.jpg" },
+        { title: "شكر وتقدير", text: "شكر وتقدير من مجلس محافظة بغداد ــ لجنة شؤون العشائر ( 2016)", meta: "شكر وتقدير", image: "assets/Certifcate_of_Award_1.jpg" },
+        { title: "شهادة تقديرية", text: "شهادة تقديريّة من جامعة بغداد ــ كليّة الآداب(قسم علم النفس) ", meta: "شهادة تقديرية", image: "assets/Certifcate_of_Award_2.jpg" },
+        { title: "شهادة تقديرية", text: "شهادة تقديريّة من الجامعة التكنلوجيّة ( مبادرة يوم الصحّة الجامعيّة) 2022", meta: "شهادة تقديرية", image: "assets/Certifcate_of_Award_3.jpg" },
+        { title: "شهادة تقديرية", text: "شهادة تقديريّة من جامعة الإمام الصادق عليه السلام 2022", meta: "شهادة تقديرية", image: "assets/Certifcate_of_Award_4.jpg" }
       ],
       participation: [
-        { title: "شهادة مشاركة 1", text: "شهادة مشاركة مضافة من ملفات المشروع.", meta: "شهادة مشاركة", image: "assets/Certifcate_of_Participation_0.jpg" },
-        { title: "شهادة مشاركة 2", text: "شهادة مشاركة مضافة من ملفات المشروع.", meta: "شهادة مشاركة", image: "assets/Certifcate_of_Participation_1.jpg" },
-        { title: "شهادة مشاركة 3", text: "شهادة مشاركة مضافة من ملفات المشروع.", meta: "شهادة مشاركة", image: "assets/Certifcate_of_Participation_2.jpg" },
-        { title: "شهادة مشاركة 4", text: "شهادة مشاركة مضافة من ملفات المشروع.", meta: "شهادة مشاركة", image: "assets/Certifcate_of_Participation_3.jpg" },
-        { title: "شهادة مشاركة 5", text: "شهادة مشاركة مضافة من ملفات المشروع.", meta: "شهادة مشاركة", image: "assets/Certifcate_of_Participation_4.jpg" },
-        { title: "شهادة مشاركة 6", text: "شهادة مشاركة مضافة من ملفات المشروع.", meta: "شهادة مشاركة", image: "assets/Certifcate_of_Participation_5.jpg" },
-        { title: "شهادة مشاركة 7", text: "شهادة مشاركة مضافة من ملفات المشروع.", meta: "شهادة مشاركة", image: "assets/Certifcate_of_Participation_6.jpg" }
+        { title: "مشاركة كمقدم شفوي (Oral Presenter)", text: "ICHS - المؤتمر الدولي المشترك في العلوم الإنسانية الدورة الثانية تحت شعار نبني الفرد... لنرتقي بالمجتمع", meta: "شهادة مشاركة", image: "assets/Certifcate_of_Participation_0.jpg" },
+        { title: "شهادة مشاركة", text: "شهادة مشاركة من مركز التدريب والتنمية البشرية (ورشة بناء الفريق وحلّ المشاكل) 2008", meta: "شهادة مشاركة", image: "assets/Certifcate_of_Participation_1.jpg" },
+        { title: "زمالة الطب النفسي الإكلينيكي المتقدم", text: "زمالة الطب النفسي الإكلينيكي المتقدم في (الطب النفسي للبالغين، طب نفسية المراهقين، طب نفسية كبار السن، والعلاجات المتقدمة) من كلية كاليفورنيا للعلوم الصحية - جاردن غروف، كاليفورنيا، الولايات المتحدة الأمريكية", meta: "شهادة مشاركة", image: "assets/Certifcate_of_Participation_2.jpg" },
+        { title: "دورة التطوير المهني المستمر (CPD)", text: "دورة التطوير المهني المستمر (CPD) في مقدمة في مهارات الاستشارة والعلاج السلوكي المعرفي (Introduction to Counselling skills and Cognitive Behavioural Therapy) من مؤسسة العين للرعاية الاجتماعية (Al-Ayn Social Care Foundation) & جامعة سري (University of Surrey)", meta: "شهادة مشاركة", image: "assets/Certifcate_of_Participation_3.jpg" },
+        { title: "شهادة مشاركة", text: "شهادة مشاركة في اليوم العالمي لمكافحة المخدرات 2022", meta: "شهادة مشاركة", image: "assets/Certifcate_of_Participation_4.jpg" },
+        { title: "شهادة مشاركة", text: "شهادة مشاركة من جامعة بغداد ــ كليّة التمريض- ندوة عن مكافحة المخدّرات", meta: "شهادة مشاركة", image: "assets/Certifcate_of_Participation_5.jpg" },
+        { title: "شهادة مشاركة", text: "شهادة مشاركة من وزارة التعليم العالي والبحث العلمي ــ مركز البحوث النفسيّة 2023", meta: "شهادة مشاركة", image: "assets/Certifcate_of_Participation_6.jpg" }
+      ],
+      research: [
+        { title: "المراضة النفسية لدى النساء الحوامل", text: "بحث منشور في مجلة آداب المستنصرية، مجلد 48 عدد 107، سنة 2024.", meta: "بحث منشور", url: "https://amm.uomustansiriyah.edu.iq/index.php/mustansiriyah/article/view/1352", button: "عرض البحث", icon: "📄" },
+        { title: "الاحتراق الوظيفي وعلاقته بالتوجه المستقبلي لدى موظفي الدولة", text: "بحث منشور في Zanco Journal of Human Sciences، المجلد 29، عدد المؤتمر 1، سنة 2025.", meta: "بحث منشور", url: "https://zancojournal.su.edu.krd/index.php/JAHS/article/view/2903/1500", button: "عرض البحث", icon: "📄" },
+        { title: "المُنَوْرَزون سيقولون ثلاثةٌ رابعُهم كلبُهم", text: "كتاب من تأليف الدكتور مهدي بلاسم، منشور لدى مؤسسة أبجد للترجمة والنشر والتوزيع، سنة الطباعة 2023.", meta: "مؤلَّف", url: "https://ebjed.com/en/single.php?view=1216", button: "عرض المؤلَّف", icon: "📘" }
       ]
     },
     gallery: [
-      { title: "نشاط مهني 1", text: "صورة من المشاركات أو اللقاءات المهنية الخاصة بالدكتور.", image: "assets/Gallery_5.jpeg", featured: true },
-      { title: "نشاط مهني 2", text: "صورة من المشاركات أو اللقاءات المهنية الخاصة بالدكتور.", image: "assets/Gallery_1.jpeg" },
-      { title: "نشاط مهني 3", text: "صورة من المشاركات أو اللقاءات المهنية الخاصة بالدكتور.", image: "assets/Gallery_2.jpeg" },
-      { title: "نشاط مهني 4", text: "صورة من المشاركات أو اللقاءات المهنية الخاصة بالدكتور.", image: "assets/Gallery_3.jpeg" },
-      { title: "نشاط مهني 5", text: "صورة من المشاركات أو اللقاءات المهنية الخاصة بالدكتور.", image: "assets/Gallery_4.jpeg" },
-      { title: "نشاط مهني 6", text: "صورة من المشاركات أو اللقاءات المهنية الخاصة بالدكتور.", image: "assets/Gallery_0.jpeg", featured: true },
-      { title: "نشاط مهني 7", text: "صورة من المشاركات أو اللقاءات المهنية الخاصة بالدكتور.", image: "assets/Gallery_6.jpeg" },
-      { title: "نشاط مهني 8", text: "صورة من المشاركات أو اللقاءات المهنية الخاصة بالدكتور.", image: "assets/Gallery_7.jpeg" }
+      { title: "مؤتمر مؤسسة العين", text: "المؤتمر السنوي لمؤسسة العين للرعاية الاجتماعيّة", image: "assets/Gallery_5.jpeg", featured: true },
+      { title: "ندوة علمية", text: "ندوة علميّة عن الطب النفسي في كلية التمريض", image: "assets/Gallery_1.jpeg" },
+      { title: "مؤتمر علمي", text: "مؤتمر علمي في جامعة وارث ــ كليّة الطب ", image: "assets/Gallery_2.jpeg" },
+      { title: "ورشة تدريب طلاب كلية الطب", text: "تدريب طلاّب كلية الطب ــ جامعة بابل ( مادة الطب النفسي)", image: "assets/Gallery_3.jpeg" },
+      { title: "مؤتمر مكافحة المخدرات", text: "مؤتمر مكافحة المخدّرات في دولة ألمانيا", image: "assets/Gallery_4.jpeg" },
+      { title: "مؤتمر في وزارة الصحة", text: "وزارة الصحّة ــ مركز التدريب والتطوير ( مكافحة المخدرات)", image: "assets/Gallery_0.jpeg", featured: true },
+      { title: "احتفالية مستشفى الرشاد", text: "الإحتفاليّة السنويّة ــ تأهيل مرضى مستشفى الرشاد", image: "assets/Gallery_6.jpeg" },
+      { title: "مستشفى متروبولوتن ", text: "مرحلة الدراسة في كاليفورنيا ـ مستشفى متروبولوتن 2012", image: "assets/Gallery_7.jpeg" }
     ],
     faq: [
       { q: "كيف يتم الحجز؟", a: "يفضل الحجز المسبق عبر الهاتف أو واتساب لتحديد الموعد المناسب." },
@@ -177,10 +183,11 @@ youtubeButton: "Visit YouTube Channel",
     servicesIntro: "Psychiatric and neurological services designed to help patients understand their condition and choose the appropriate treatment path.",
     certTag: "Certificates",
     certTitle: "Certificates and Qualifications",
-    certIntro: "This section presents the currently available professional qualifications and certificates, with room to update images or add new certificates later.",
-    certTabAcademic: "Academic & Courses",
-    certTabHonorary: "Awards",
-    certTabParticipation: "Participation",
+    certIntro: "Professional qualifications, certificates, participations, research, and publications of Dr. Mahdi Saleh Blasim.",
+    certTabAcademic: "Academic Certificates & Courses",
+    certTabHonorary: "Appreciation Certificates",
+    certTabParticipation: "Participation Certificates",
+    certTabResearch: "Research & Publications",
     galleryTag: "Gallery and Appearances",
     galleryTitle: "Media Appearances and Professional Activities",
     galleryIntro: "Photos from professional activities and appearances. Click any image to view it larger.",
@@ -192,7 +199,7 @@ youtubeButton: "Visit YouTube Channel",
     contactIntro: "Advance booking by phone or WhatsApp is preferred to arrange a suitable appointment.",
     contactPhoneLabel: "Phone / WhatsApp",
     contactHoursLabel: "Working Hours",
-    contactHoursValue: "Daily except Friday and Monday",
+    contactHoursValue: "Daily except Friday, from 4:00 PM to 8:00 PM",
     contactAddressLabel: "Address",
     contactAddressValue: "Baghdad - Palestine Street - Beirut Square - Al Madina Medical Complex - above Haram Al Madina Pharmacy - near Al Mann wa Al Salwa sweets",
     footerText: "A warm, modern Arabic/English interface focused on trust, comfort, and quick access to the essential clinic information.",
@@ -200,7 +207,7 @@ youtubeButton: "Visit YouTube Channel",
     footerContact: "Location and clinic number:",
     footerAddress: "Baghdad - Beirut Square - Al Madina Medical Complex - Phone: 07713295841",
     footerDisclaimer: "This website is for clinic information and appointment booking only. It does not replace direct medical consultation or emergency care when needed.",
-    footerHours: "Daily except Friday and Monday",
+    footerHours: "Daily except Friday, 4:00 PM - 8:00 PM",
     floatingWhatsapp: "WhatsApp",
     clickToZoom: "Click to enlarge",
     trust: [
@@ -227,41 +234,46 @@ youtubeButton: "Visit YouTube Channel",
     certificates: {
       academic: [
         { title: "Board / Doctorate in Psychiatry and Neurology", text: "Iraqi Board for Medical Specializations.", meta: "Academic Certificate" },
-        { title: "CBT - Royal College of Psychiatry", text: "Cognitive Behavioral Therapy course under Royal College supervision.", meta: "Specialized Course" },
-        { title: "CBT - University of Surrey", text: "Additional academic training in Cognitive Behavioral Therapy.", meta: "Specialized Course" },
-        { title: "APA Depression Program", text: "Program on depression by the American Psychological Association.", meta: "Specialized Program" },
-        { title: "Advanced Clinical Fellowship in Adult / Adolescent / Geriatric Psychiatry", text: "California School of Health Science.", meta: "Fellowship / Diploma" },
-        { title: "Substance Abuse Course", text: "Specialized training program - Jordan.", meta: "Specialized Program" },
+        { title: "CBT - Royal College of Psychiatrists", text: "Cognitive Behavioral Therapy course under the supervision of the Royal College.", meta: "Specialized Course", image: "assets/Certifcate_of_Participation_7.jpg" },
+        { title: "CBT - University of Surrey", text: "Additional program in Cognitive Behavioral Therapy.", meta: "Specialized Course" },
+        { title: "Depression Treatment Program", text: "American Psychological Association (APA).", meta: "Specialized Program" },
+        { title: "Diploma in Geriatric and Adolescent Psychiatry", text: "California School of Health Science.", meta: "Fellowship / Diploma" },
+        { title: "Substance Abuse Treatment", text: "Specialized training program - Jordan.", meta: "Specialized Program" },
         { title: "Psychoanalysis for Children and Adolescents - California", text: "Separate certificate in psychoanalysis for children and adolescents.", meta: "Specialized Certificate" },
-        { title: "Psychoanalysis for Children and Adolescents - Hamburg", text: "Separate certificate in the same field in addition to the California certificate.", meta: "Specialized Certificate" },
+        { title: "Psychoanalysis for Children and Adolescents - Hamburg", text: "Separate certificate in the same field, in addition to the California certificate.", meta: "Specialized Certificate" },
         { title: "Team Building and Problem Solving", text: "Baghdad - Training and Development Center.", meta: "Professional Development" }
       ],
       honorary: [
-        { title: "Award Certificate 1", text: "Award certificate added from the provided project files.", meta: "Award Certificate", image: "assets/Certifcate_of_Award_0.jpg" },
-        { title: "Award Certificate 2", text: "Award certificate added from the provided project files.", meta: "Award Certificate", image: "assets/Certifcate_of_Award_1.jpg" },
-        { title: "Award Certificate 3", text: "Award certificate added from the provided project files.", meta: "Award Certificate", image: "assets/Certifcate_of_Award_2.jpg" },
-        { title: "Award Certificate 4", text: "Award certificate added from the provided project files.", meta: "Award Certificate", image: "assets/Certifcate_of_Award_3.jpg" },
-        { title: "Award Certificate 5", text: "Award certificate added from the provided project files.", meta: "Award Certificate", image: "assets/Certifcate_of_Award_4.jpg" }
+        { title: "Appreciation Certificate", text: "Appreciation certificate on World Mental Health Day 2022 by the Ministry of Health.", meta: "Appreciation Certificate", image: "assets/Certifcate_of_Award_0.jpg" },
+        { title: "Letter of Thanks and Appreciation", text: "Letter of thanks and appreciation from Baghdad Provincial Council - Tribal Affairs Committee, 2016.", meta: "Thanks and Appreciation", image: "assets/Certifcate_of_Award_1.jpg" },
+        { title: "Appreciation Certificate", text: "Appreciation certificate from the University of Baghdad - College of Arts, Department of Psychology.", meta: "Appreciation Certificate", image: "assets/Certifcate_of_Award_2.jpg" },
+        { title: "Appreciation Certificate", text: "Appreciation certificate from the University of Technology for the University Health Day Initiative, 2022.", meta: "Appreciation Certificate", image: "assets/Certifcate_of_Award_3.jpg" },
+        { title: "Appreciation Certificate", text: "Appreciation certificate from Imam Ja'afar Al-Sadiq University, 2022.", meta: "Appreciation Certificate", image: "assets/Certifcate_of_Award_4.jpg" }
       ],
       participation: [
-        { title: "Participation Certificate 1", text: "Participation certificate added from the provided project files.", meta: "Participation Certificate", image: "assets/Certifcate_of_Participation_0.jpg" },
-        { title: "Participation Certificate 2", text: "Participation certificate added from the provided project files.", meta: "Participation Certificate", image: "assets/Certifcate_of_Participation_1.jpg" },
-        { title: "Participation Certificate 3", text: "Participation certificate added from the provided project files.", meta: "Participation Certificate", image: "assets/Certifcate_of_Participation_2.jpg" },
-        { title: "Participation Certificate 4", text: "Participation certificate added from the provided project files.", meta: "Participation Certificate", image: "assets/Certifcate_of_Participation_3.jpg" },
-        { title: "Participation Certificate 5", text: "Participation certificate added from the provided project files.", meta: "Participation Certificate", image: "assets/Certifcate_of_Participation_4.jpg" },
-        { title: "Participation Certificate 6", text: "Participation certificate added from the provided project files.", meta: "Participation Certificate", image: "assets/Certifcate_of_Participation_5.jpg" },
-        { title: "Participation Certificate 7", text: "Participation certificate added from the provided project files.", meta: "Participation Certificate", image: "assets/Certifcate_of_Participation_6.jpg" }
+        { title: "Participation as an Oral Presenter", text: "ICHS - The 2nd International Joint Conference on Humanities under the slogan: We build the individual... to elevate society.", meta: "Participation Certificate", image: "assets/Certifcate_of_Participation_0.jpg" },
+        { title: "Participation Certificate", text: "Participation certificate from the Training and Human Development Center for the Team Building and Problem Solving workshop, 2008.", meta: "Participation Certificate", image: "assets/Certifcate_of_Participation_1.jpg" },
+        { title: "Advanced Clinical Psychiatry Fellowship", text: "Advanced Clinical Psychiatry Fellowship in adult psychiatry, adolescent psychiatry, geriatric psychiatry, and advanced therapies from California College of Health Sciences - Garden Grove, California, USA.", meta: "Participation Certificate", image: "assets/Certifcate_of_Participation_2.jpg" },
+        { title: "Continuing Professional Development (CPD) Course", text: "CPD course: Introduction to Counselling Skills and Cognitive Behavioural Therapy, by Al-Ayn Social Care Foundation and the University of Surrey.", meta: "Participation Certificate", image: "assets/Certifcate_of_Participation_3.jpg" },
+        { title: "Participation Certificate", text: "Participation certificate for the International Day Against Drug Abuse 2022.", meta: "Participation Certificate", image: "assets/Certifcate_of_Participation_4.jpg" },
+        { title: "Participation Certificate", text: "Participation certificate from the University of Baghdad - College of Nursing for a seminar on combating drug abuse.", meta: "Participation Certificate", image: "assets/Certifcate_of_Participation_5.jpg" },
+        { title: "Participation Certificate", text: "Participation certificate from the Ministry of Higher Education and Scientific Research - Psychological Research Center, 2023.", meta: "Participation Certificate", image: "assets/Certifcate_of_Participation_6.jpg" }
+      ],
+      research: [
+        { title: "Psychiatric Morbidity among Pregnant Women", text: "Published research in Al-Mustansiriyah Journal of Arts, Volume 48, Issue 107, 2024.", meta: "Published Research", url: "https://amm.uomustansiriyah.edu.iq/index.php/mustansiriyah/article/view/1352", button: "View Research", icon: "📄" },
+        { title: "Job Burnout and its Relationship to the Future Orientation of Country Employees", text: "Published research in Zanco Journal of Human Sciences, Vol. 29, Conference Issue 1, 2025.", meta: "Published Research", url: "https://zancojournal.su.edu.krd/index.php/JAHS/article/view/2903/1500", button: "View Research", icon: "📄" },
+        { title: "Al-Munawrazun: They Will Say, Three, the Fourth of Them Is Their Dog", text: "A book authored by Dr. Mahdi Blasim, published by Ebjed Foundation for Translation, Publishing and Distribution, 2023.", meta: "Publication", url: "https://ebjed.com/en/single.php?view=1216", button: "View Publication", icon: "📘" }
       ]
     },
     gallery: [
-      { title: "Professional Activity 1", text: "A photo from the doctor's professional activities or appearances.", image: "assets/Gallery_0.jpeg", featured: true },
-      { title: "Professional Activity 2", text: "A photo from the doctor's professional activities or appearances.", image: "assets/Gallery_1.jpeg" },
-      { title: "Professional Activity 3", text: "A photo from the doctor's professional activities or appearances.", image: "assets/Gallery_2.jpeg" },
-      { title: "Professional Activity 4", text: "A photo from the doctor's professional activities or appearances.", image: "assets/Gallery_3.jpeg" },
-      { title: "Professional Activity 5", text: "A photo from the doctor's professional activities or appearances.", image: "assets/Gallery_4.jpeg" },
-      { title: "Professional Activity 6", text: "A photo from the doctor's professional activities or appearances.", image: "assets/Gallery_5.jpeg", featured: true },
-      { title: "Professional Activity 7", text: "A photo from the doctor's professional activities or appearances.", image: "assets/Gallery_6.jpeg" },
-      { title: "Professional Activity 8", text: "A photo from the doctor's professional activities or appearances.", image: "assets/Gallery_7.jpeg" }
+      { title: "Al-Ayn Foundation Conference", text: "The annual conference of Al-Ayn Social Care Foundation.", image: "assets/Gallery_5.jpeg", featured: true },
+      { title: "Scientific Seminar", text: "A scientific seminar on psychiatry at the College of Nursing.", image: "assets/Gallery_1.jpeg" },
+      { title: "Scientific Conference", text: "A scientific conference at Warith University - College of Medicine.", image: "assets/Gallery_2.jpeg" },
+      { title: "Medical Students Training Workshop", text: "Training medical students at the University of Babylon in psychiatry.", image: "assets/Gallery_3.jpeg" },
+      { title: "Drug Abuse Prevention Conference", text: "A conference on combating drug abuse in Germany.", image: "assets/Gallery_4.jpeg" },
+      { title: "Conference at the Ministry of Health", text: "Ministry of Health - Training and Development Center, combating drug abuse.", image: "assets/Gallery_0.jpeg", featured: true },
+      { title: "Al-Rashad Hospital Celebration", text: "The annual celebration for the rehabilitation of Al-Rashad Hospital patients.", image: "assets/Gallery_6.jpeg" },
+      { title: "Metropolitan Hospital", text: "Study period in California - Metropolitan Hospital, 2012.", image: "assets/Gallery_7.jpeg" }
     ],
     faq: [
       { q: "How is booking handled?", a: "Advance booking by phone or WhatsApp is preferred to arrange a suitable appointment." },
@@ -361,11 +373,27 @@ function createInteractiveCard(item, className) {
   `;
 }
 
+function createLinkCard(item, className) {
+  return `
+    <article class="${className} link-card">
+      <div class="link-icon" aria-hidden="true">${item.icon || "🔗"}</div>
+      <h3>${item.title}</h3>
+      <p>${item.text}</p>
+      <span class="cert-meta">${item.meta}</span>
+      <a class="cert-link" href="${item.url}" target="_blank" rel="noopener">${item.button}</a>
+    </article>
+  `;
+}
+
 function renderCertificates(lang, filter) {
   const items = content[lang].certificates[filter] || [];
   certCards.innerHTML = items.map(item => {
     if (item.image) {
       return createInteractiveCard(item, "cert-card");
+    }
+
+    if (item.url) {
+      return createLinkCard(item, "cert-card");
     }
 
     return `
