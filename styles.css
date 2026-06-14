@@ -1,3 +1,7 @@
+/* ===============================
+   المتغيرات العامة للموقع
+   هنا تغيّر الألوان، الظلال، الزوايا، وعرض الحاوية الرئيسي
+   =============================== */
 :root {
   --bg: #f7fbf9;
   --surface: rgba(255, 255, 255, 0.82);
@@ -16,14 +20,23 @@
   --container: 1180px;
 }
 
+
+/* ===============================
+   إعدادات عامة لكل العناصر
+   تجعل حساب العرض والارتفاع أسهل وتمنع مشاكل التمدد
+   =============================== */
 * {
   box-sizing: border-box;
 }
 
+
+/* حركة الانتقال الناعم عند الضغط على روابط الأقسام */
 html {
   scroll-behavior: smooth;
 }
 
+
+/* إعدادات جسم الصفحة: الخط، لون النص، الخلفية العامة، ومنع التمدد الأفقي */
 body {
   margin: 0;
   font-family: Tahoma, Arial, "Segoe UI", sans-serif;
@@ -39,38 +52,54 @@ body.is-locked {
   overflow: hidden;
 }
 
+
+/* إعدادات الصور حتى لا تتجاوز حجم الحاوية وتظهر كعنصر block */
 img {
   max-width: 100%;
   display: block;
 }
 
+
+/* إعدادات الروابط: إزالة الخط السفلي واستخدام لون النص الحالي */
 a {
   color: inherit;
   text-decoration: none;
 }
 
+
+/* جعل الأزرار تستخدم نفس خط الموقع */
 button {
   font: inherit;
 }
 
+
+/* الحاوية الرئيسية التي تحدد عرض المحتوى داخل الصفحة */
 .container {
   width: min(var(--container), calc(100% - 2rem));
   margin-inline: auto;
 }
 
+
+/* حاوية أضيق للنصوص أو الأقسام التي تحتاج عرض أقل */
 .narrow {
   width: min(860px, calc(100% - 2rem));
 }
 
+
+/* المسافة العامة فوق وتحت كل قسم من أقسام الموقع */
 .section {
   position: relative;
   padding: 64px 0;
 }
 
+
+/* خلفية ناعمة لبعض الأقسام حتى تنفصل بصرياً عن غيرها */
 .section-soft {
   background: linear-gradient(180deg, rgba(236, 248, 244, 0.76), rgba(255, 255, 255, 0.56));
 }
 
+
+/* رأس القسم: يحتوي غالباً على التسمية الصغيرة والعنوان والوصف */
 .section-head {
   display: flex;
   align-items: end;
@@ -85,15 +114,19 @@ button {
   text-align: center;
 }
 
+
+/* أحجام عناوين الأقسام الرئيسية والكروت الكبيرة */
 .section-head h2,
 .content-card h2,
 .contact-card h2,
 .side-panel h3 {
   margin: 0.35rem 0 0;
-  font-size: clamp(1.35rem, 2.2vw, 2rem);
+  font-size: clamp(1.22rem, 1.75vw, 1.65rem);
   line-height: 1.45;
 }
 
+
+/* نصوص الوصف أسفل عناوين الأقسام */
 .section-head p,
 .content-card p,
 .contact-intro,
@@ -107,6 +140,8 @@ button {
   max-width: 760px;
 }
 
+
+/* الشارة الصغيرة فوق العنوان مثل: ما نقدمه في العيادة */
 .section-tag,
 .eyebrow {
   display: inline-flex;
@@ -116,13 +151,15 @@ button {
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.78);
   color: var(--primary-dark);
-  padding: 0.62rem 0.95rem;
+  padding: 0.52rem 0.85rem;
   border-radius: 999px;
-  font-size: 1rem;
+  font-size: 0.92rem;
   font-weight: 700;
   box-shadow: 0 8px 24px rgba(47, 157, 133, 0.08);
 }
 
+
+/* الهيدر العلوي الثابت: الشعار، القائمة، أزرار اللغة والحجز */
 .site-header {
   position: sticky;
   top: 0;
@@ -132,6 +169,8 @@ button {
   border-bottom: 1px solid rgba(47, 157, 133, 0.1);
 }
 
+
+/* ترتيب محتوى الهيدر من الداخل */
 .header-wrap {
   position: relative;
   display: grid;
@@ -139,6 +178,8 @@ button {
   padding: 0.85rem 0;
 }
 
+
+/* صفوف الهيدر: الصف العلوي والصف السفلي */
 .header-top,
 .header-bottom {
   display: flex;
@@ -152,6 +193,8 @@ button {
   padding-top: 0.7rem;
 }
 
+
+/* منطقة الهوية: شعار العيادة واسم الدكتور */
 .brand {
   display: flex;
   align-items: center;
@@ -159,6 +202,8 @@ button {
   min-width: 0;
 }
 
+
+/* حجم وشكل صورة الشعار */
 .brand-logo {
   width: 58px;
   height: 58px;
@@ -168,12 +213,16 @@ button {
   box-shadow: var(--shadow);
 }
 
+
+/* تنسيق اسم الدكتور بجانب الشعار */
 .brand-name {
   font-weight: 800;
   line-height: 1.35;
   font-size: 0.95rem;
 }
 
+
+/* قائمة التنقل الرئيسية بين أقسام الموقع */
 .site-nav {
   display: flex;
   align-items: center;
@@ -182,6 +231,8 @@ button {
   flex-wrap: nowrap;
 }
 
+
+/* شكل روابط القائمة */
 .site-nav a {
   position: relative;
   color: var(--text-soft);
@@ -214,6 +265,8 @@ button {
   transform: scaleX(1);
 }
 
+
+/* أزرار الهيدر مثل اللغة والحجز */
 .header-actions {
   display: flex;
   align-items: center;
@@ -221,7 +274,11 @@ button {
   flex-shrink: 0;
 }
 
+
+/* القواعد المشتركة للأزرار الدائرية */
 .lang-toggle,
+
+/* الزر العام المستخدم في الموقع */
 .btn {
   border-radius: 999px;
   border: 1px solid transparent;
@@ -229,6 +286,8 @@ button {
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease;
 }
 
+
+/* زر تغيير اللغة */
 .lang-toggle {
   padding: 0.72rem 0.9rem;
   background: rgba(255, 255, 255, 0.9);
@@ -253,26 +312,36 @@ button {
   box-shadow: 0 10px 24px rgba(31, 120, 103, 0.08);
 }
 
+
+/* نسخة أصغر من الزر */
 .btn-small {
   padding: 0.74rem 1rem;
 }
 
+
+/* الزر الممتلئ باللون الرئيسي */
 .btn-solid {
   background: linear-gradient(135deg, var(--primary), #3aa88d);
   color: #fff;
 }
 
+
+/* الزر بإطار فقط وخلفية فاتحة */
 .btn-outline {
   background: rgba(255, 255, 255, 0.92);
   border-color: var(--line);
   color: var(--text);
 }
 
+
+/* قسم البداية Hero: أول قسم يراه الزائر وفيه التعريف الأساسي والدعوة للحجز */
 .hero {
   padding-top: 56px;
   padding-bottom: 64px;
 }
 
+
+/* تقسيم قسم البداية إلى نص وصورة */
 .hero-grid {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -280,10 +349,16 @@ button {
   align-items: center;
 }
 
+
+/* الكروت الزجاجية/البيضاء العامة مثل كرت البداية وكروت المحتوى */
 .hero-copy,
+
+/* المسافات الداخلية للكروت الكبيرة */
 .content-card,
 .side-panel,
 .contact-card,
+
+/* كرت الخريطة */
 .map-card {
   background: var(--surface);
   border: 1px solid rgba(255, 255, 255, 0.74);
@@ -291,23 +366,31 @@ button {
   box-shadow: var(--shadow);
 }
 
+
+/* المسافة الداخلية لكرت النص في قسم البداية */
 .hero-copy {
   padding: 2.2rem;
 }
 
+
+/* حجم عنوان الصفحة الرئيسي داخل قسم البداية */
 .hero-copy h1 {
-  font-size: clamp(1.35rem, 2.2vw, 2rem);
+  font-size: clamp(1.28rem, 1.95vw, 1.82rem);
   line-height: 1.22;
   margin: 1rem 0;
 }
 
+
+/* وصف قصير أسفل عنوان البداية */
 .hero-text {
-  font-size: 1.05rem;
-  line-height: 2;
+  font-size: 0.95rem;
+  line-height: 1.9;
   color: var(--text-soft);
   max-width: fit-content;
 }
 
+
+/* أزرار الحجز والتواصل داخل قسم البداية */
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -315,6 +398,8 @@ button {
   margin-top: 1.7rem;
 }
 
+
+/* شبكة نقاط الثقة تحت نص البداية */
 .trust-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -322,7 +407,11 @@ button {
   margin-top: 1.85rem;
 }
 
+
+/* الشكل المشترك للكروت الصغيرة: ثقة، خدمة، شهادة، معرض، سؤال */
 .trust-item,
+
+/* المسافة الداخلية لكروت الخدمات والشهادات والمعرض */
 .service-card,
 .cert-card,
 .gallery-card,
@@ -355,10 +444,14 @@ button {
   line-height: 1.8;
 }
 
+
+/* منطقة صورة الدكتور في قسم البداية */
 .hero-visual {
   position: relative;
 }
 
+
+/* الإطار المحيط بصورة الدكتور */
 .hero-image-frame {
   position: relative;
   background: linear-gradient(180deg, rgba(216, 242, 234, 0.92), rgba(255, 255, 255, 0.8));
@@ -368,6 +461,8 @@ button {
   box-shadow: var(--shadow);
 }
 
+
+/* صورة الدكتور الرئيسية */
 .hero-image {
   width: 100%;
   aspect-ratio: 4 / 5;
@@ -376,6 +471,8 @@ button {
   border-radius: 30px;
 }
 
+
+/* البطاقة الصغيرة فوق صورة الدكتور */
 .hero-badge {
   position: absolute;
   inset-inline-start: -1rem;
@@ -398,6 +495,8 @@ button {
   font-size: 0.95rem;
 }
 
+
+/* شبكة تقسيم قسمين جنباً إلى جنب مثل عن الدكتور والمنهج */
 .split-grid {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
@@ -414,6 +513,8 @@ button {
   padding: 1.8rem;
 }
 
+
+/* شبكة الإحصائيات الصغيرة */
 .mini-stats {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -425,8 +526,12 @@ button {
   padding: 1rem;
 }
 
+
+/* شبكات الكروت العامة مثل المنهج والخدمات والأسئلة */
 .method-list,
 .cards-grid,
+
+/* قائمة الأسئلة الشائعة */
 .faq-list {
   display: grid;
   gap: 1rem;
@@ -436,15 +541,21 @@ button {
   padding: 1rem 1rem 1rem 1.15rem;
 }
 
+
+/* أحجام عناوين الكروت الصغيرة والأسئلة */
 .method-card h4,
 .service-card h3,
 .cert-card h3,
 .gallery-card h3,
+
+/* سطر السؤال القابل للفتح والإغلاق */
 .faq-question {
   margin: 0 0 0.45rem;
-  font-size: 0.98rem;
+  font-size: 0.95rem;
 }
 
+
+/* شبكة كروت الخدمات أو الشهادات */
 .cards-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -456,6 +567,8 @@ button {
   overflow: hidden;
 }
 
+
+/* الأيقونة الافتراضية التي تظهر أعلى بعض الكروت */
 .service-card::before,
 .cert-card::before,
 .gallery-card::before {
@@ -473,6 +586,8 @@ button {
   display: none;
 }
 
+
+/* شكل أيقونة الخدمة داخل كرت الخدمة */
 .service-icon {
   width: 54px;
   height: 54px;
@@ -501,6 +616,8 @@ button {
   display: none;
 }
 
+
+/* تأثير ارتفاع بسيط عند تمرير الماوس على الكروت */
 .service-card:hover,
 .cert-card:hover,
 .gallery-card:hover,
@@ -510,6 +627,8 @@ button {
   transform: translateY(-4px);
 }
 
+
+/* الكروت التي تحتوي صور ويمكن الضغط عليها */
 .has-media {
   cursor: pointer;
 }
@@ -519,6 +638,8 @@ button {
   outline-offset: 3px;
 }
 
+
+/* أزرار تبويب الشهادات: أكاديمية، مشاركات، أنشطة، بحوث */
 .filter-tabs {
   display: flex;
   flex-wrap: wrap;
@@ -529,6 +650,8 @@ button {
   -webkit-overflow-scrolling: touch;
 }
 
+
+/* شكل زر التبويب */
 .filter-tabs button {
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.85);
@@ -549,10 +672,14 @@ button {
   border-color: transparent;
 }
 
+
+/* منطقة عرض الشهادات حسب التبويب المختار */
 .certificates-grid {
   min-height: 240px;
 }
 
+
+/* شارة صغيرة داخل كرت الشهادة مثل النوع أو السنة */
 .cert-meta {
   display: inline-flex;
   align-items: center;
@@ -565,6 +692,8 @@ button {
   font-size: 0.88rem;
 }
 
+
+/* حاويات صور الشهادات والمعرض */
 .card-media,
 .gallery-media {
   position: relative;
@@ -586,16 +715,22 @@ button {
   transition: transform 0.35s ease;
 }
 
+
+/* طريقة عرض صورة الشهادة كاملة بدون قص */
 .cert-card .card-media img {
   object-fit: contain;
   background: #fff;
   padding: 0.35rem;
 }
 
+
+/* إخفاء الأيقونة الافتراضية في كروت الروابط */
 .link-card::before {
   display: none;
 }
 
+
+/* أيقونة كرت الروابط مثل البحوث والمؤلفات */
 .link-icon {
   width: 54px;
   height: 54px;
@@ -610,6 +745,8 @@ button {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
+
+/* زر فتح البحث أو المؤلف */
 .cert-link {
   display: inline-flex;
   align-items: center;
@@ -647,12 +784,16 @@ button {
   backdrop-filter: blur(6px);
 }
 
+
+/* شبكة صور المعرض */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
 }
 
+
+/* صورة مميزة تأخذ مساحة أكبر داخل المعرض */
 .gallery-card.featured {
   grid-column: span 2;
   grid-row: span 2;
@@ -666,6 +807,8 @@ button {
   gap: 0.9rem;
 }
 
+
+/* كرت السؤال الواحد */
 .faq-item {
   padding: 1.2rem 1.25rem;
 }
@@ -708,6 +851,8 @@ button {
 }
 
 
+
+/* شريط الحجز السريع قبل قسم التواصل */
 .booking-cta-card {
   display: flex;
   align-items: center;
@@ -720,9 +865,11 @@ button {
   box-shadow: var(--shadow);
 }
 
+
+/* عنوان شريط الحجز السريع */
 .booking-cta-copy h2 {
   margin: 0.75rem 0 0;
-  font-size: clamp(1.3rem, 2vw, 1.9rem);
+  font-size: clamp(1.18rem, 1.75vw, 1.58rem);
   line-height: 1.4;
 }
 
@@ -740,18 +887,24 @@ button {
   flex: 0 0 auto;
 }
 
+
+/* تقسيم قسم التواصل إلى معلومات وخريطة */
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
 }
 
+
+/* قائمة بيانات التواصل */
 .contact-items {
   display: grid;
   gap: 0.9rem;
   margin-top: 1.35rem;
 }
 
+
+/* كرت معلومة التواصل الواحدة */
 .contact-item {
   display: grid;
   gap: 0.4rem;
@@ -773,6 +926,8 @@ button {
   margin-top: 1.5rem;
 }
 
+
+/* روابط السوشيال داخل قسم التواصل */
 .social-links {
   display: flex;
   flex-wrap: wrap;
@@ -817,11 +972,15 @@ button {
   border-radius: calc(var(--radius-xl) - 6px);
 }
 
+
+/* الفوتر أسفل الموقع */
 .site-footer {
   padding: 0 0 2rem;
   text-align: center;
 }
 
+
+/* ترتيب محتوى الفوتر */
 .footer-grid {
   display: flex;
   flex-direction: column;
@@ -843,7 +1002,7 @@ button {
 
 .footer-title {
   margin: 0;
-  font-size: 1.06rem;
+  font-size: 1rem;
   font-weight: 800;
   color: var(--text);
   white-space: nowrap;
@@ -900,6 +1059,8 @@ button {
   text-align: center;
 }
 
+
+/* استجابة الموبايل: تقليل المسافات وجعل الكروت بعرض كامل */
 @media (max-width: 720px) {
   .footer-row {
     flex-direction: column;
@@ -916,6 +1077,8 @@ button {
   }
 }
 
+
+/* زر واتساب العائم الثابت أسفل الصفحة */
 .floating-whatsapp {
   position: fixed;
   inset-inline-end: 18px;
@@ -929,6 +1092,8 @@ button {
   box-shadow: 0 20px 42px rgba(24, 90, 70, 0.18);
 }
 
+
+/* دوائر ضوئية خفيفة في خلفية الموقع */
 .bg-orb {
   position: fixed;
   width: 360px;
@@ -949,6 +1114,8 @@ button {
   bottom: 8%;
 }
 
+
+/* زر القائمة في شاشات الموبايل */
 .menu-toggle {
   display: none;
   width: 48px;
@@ -972,6 +1139,8 @@ button {
   margin-top: 6px;
 }
 
+
+/* نافذة تكبير الصور عند الضغط عليها */
 .lightbox {
   position: fixed;
   inset: 0;
@@ -1012,7 +1181,7 @@ button {
 
 .lightbox-meta h3 {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.08rem;
 }
 
 .lightbox-meta p {
@@ -1037,6 +1206,8 @@ button {
   cursor: pointer;
 }
 
+
+/* استجابة الشاشات المتوسطة: تحويل بعض الشبكات إلى عمود واحد */
 @media (max-width: 1080px) {
   .hero-grid,
   .split-grid,
@@ -1062,6 +1233,8 @@ button {
   }
 }
 
+
+/* استجابة التابلت والموبايل: إظهار زر القائمة وإخفاء القائمة العادية */
 @media (max-width: 900px) {
   .header-bottom {
     border-top: 0;
@@ -1209,6 +1382,8 @@ button {
   }
 }
 
+
+/* تعديلات خاصة بالنسخة الإنجليزية ذات الاتجاه من اليسار إلى اليمين */
 body[dir="ltr"] {
   font-family: "Segoe UI", Arial, sans-serif;
 }
@@ -1227,6 +1402,8 @@ body[dir="ltr"] .site-nav a::after {
   right: 0;
 }
 
+
+/* استجابة الشاشات الصغيرة جداً */
 @media (max-width: 520px) {
   .header-top {
     align-items: flex-start;
@@ -1255,6 +1432,8 @@ body[dir="ltr"] .site-nav a::after {
     font-size: 0.9rem;
   }
 }
+
+/* قسم اليوتيوب: تقسيم النص والفيديو */
 .youtube-grid {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -1262,6 +1441,8 @@ body[dir="ltr"] .site-nav a::after {
   align-items: center;
 }
 
+
+/* كروت قسم اليوتيوب */
 .youtube-card,
 .youtube-video-card {
   background: var(--surface);
@@ -1274,9 +1455,11 @@ body[dir="ltr"] .site-nav a::after {
   padding: 2rem;
 }
 
+
+/* عنوان قسم اليوتيوب */
 .youtube-card h2 {
   margin: 1rem 0 0;
-  font-size: clamp(1.35rem, 2.2vw, 2rem);
+  font-size: clamp(1.22rem, 1.75vw, 1.65rem);
   line-height: 1.4;
 }
 
@@ -1297,13 +1480,15 @@ body[dir="ltr"] .site-nav a::after {
 
 .youtube-video-card iframe {
   width: 100%;
-  aspect-ratio: 9 / 16;
+  aspect-ratio: 16 / 9;
   border: 0;
   border-radius: 24px;
   display: block;
   background: #000;
 }
 
+
+/* جعل قسم اليوتيوب عمود واحد على الشاشات الصغيرة */
 @media (max-width: 900px) {
   .youtube-grid {
     grid-template-columns: 1fr;
@@ -1311,6 +1496,7 @@ body[dir="ltr"] .site-nav a::after {
 }
 
 
+/* تقليل حواف ومسافات قسم اليوتيوب في الموبايل */
 @media (max-width: 720px) {
   .youtube-card,
   .youtube-video-card {
