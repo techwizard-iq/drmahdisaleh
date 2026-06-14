@@ -1297,7 +1297,7 @@ body[dir="ltr"] .site-nav a::after {
 
 .youtube-video-card iframe {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 9 / 16;
   border: 0;
   border-radius: 24px;
   display: block;
