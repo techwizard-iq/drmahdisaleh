@@ -240,7 +240,7 @@ const content = {
     certificates: {
       academic: [
         { title: "Board / Doctorate in Psychiatry and Neurology", text: "Iraqi Board for Medical Specializations.", meta: "Academic Certificate" },
-        { title: "CBT - Royal College of Psychiatrists", text: "Cognitive Behavioral Therapy course under the supervision of the Royal College.", meta: "Specialized Course", image: "assets/Certifcate_of_Participation_7.jpg" },
+        { title: "CBT - University of Surrey", text: "Cognitive Behavioral Therapy course under the supervision of the University of Surrey.", meta: "Specialized Course", image: "assets/Certifcate_of_Participation_7.jpg" },
         { title: "CBT - University of Surrey", text: "Additional program in Cognitive Behavioral Therapy.", meta: "Specialized Course" },
         { title: "Depression Treatment Program", text: "American Psychological Association (APA).", meta: "Specialized Program" },
         { title: "Diploma in Geriatric and Adolescent Psychiatry", text: "California School of Health Science.", meta: "Fellowship / Diploma" },
