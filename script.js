@@ -94,7 +94,7 @@ const content = {
     certificates: {
       academic: [
         { title: "بورد (دكتوراه) في الطب النفسي والعصبي", text: "المجلس العراقي للاختصاصات الطبية.", meta: "شهادة أكاديمية" },
-        { title: "CBT - الكلية الملكية البريطانية", text: "كورس العلاج المعرفي السلوكي بإشراف الكلية الملكية البريطانية.", meta: "دورة تخصصية" , image: "assets/Certifcate_of_Participation_7.jpg"},
+        { title: "CBT - جامعة سري البريطانية", text: "كورس العلاج المعرفي السلوكي بإشراف جامعة سري البريطانية.", meta: "دورة تخصصية" , image: "assets/Certifcate_of_Participation_7.jpg"},
         { title: "CBT - جامعة سري البريطانية", text: "برنامج إضافي في العلاج المعرفي السلوكي.", meta: "دورة تخصصية" },
         { title: "برنامج علاج الاكتئاب", text: "الجمعية الأمريكية لعلم النفس (APA).", meta: "برنامج تخصصي" },
         { title: "دبلوم الطب النفسي لكبار السن والمراهقين", text: "California School of Health Science.", meta: "زمالة / دبلوم" },
