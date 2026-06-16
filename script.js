@@ -1,6 +1,7 @@
 const content = {
   ar: {
     title: "عيادة الدكتور مهدي صالح بلاسم للطب النفسي والعصبي",
+    skipToContent: "تخطي إلى المحتوى",
     brandName: "عيادة الدكتور مهدي صالح بلاسم للطب النفسي والعصبي",
     navHome: "الرئيسية",
     navAbout: "عن الدكتور",
@@ -146,6 +147,7 @@ const content = {
   },
   en: {
     title: "Dr. Mahdi Saleh Blasim Clinic for Psychiatry and Neurology",
+    skipToContent: "Skip to content",
     brandName: "Dr. Mahdi Saleh Blasim Clinic for Psychiatry and Neurology",
     navHome: "Home",
     navAbout: "About the Doctor",
@@ -240,7 +242,7 @@ const content = {
     certificates: {
       academic: [
         { title: "Board / Doctorate in Psychiatry and Neurology", text: "Iraqi Board for Medical Specializations.", meta: "Academic Certificate" },
-        { title: "CBT - University of Surrey", text: "Cognitive Behavioral Therapy course under the supervision of the University of Surrey.", meta: "Specialized Course", image: "assets/Certifcate_of_Participation_7.jpg" },
+        { title: "CBT - Royal College of Psychiatrists", text: "Cognitive Behavioral Therapy course under the supervision of the Royal College.", meta: "Specialized Course", image: "assets/Certifcate_of_Participation_7.jpg" },
         { title: "CBT - University of Surrey", text: "Additional program in Cognitive Behavioral Therapy.", meta: "Specialized Course" },
         { title: "Depression Treatment Program", text: "American Psychological Association (APA).", meta: "Specialized Program" },
         { title: "Diploma in Geriatric and Adolescent Psychiatry", text: "California School of Health Science.", meta: "Fellowship / Diploma" },
@@ -309,7 +311,16 @@ const lightboxImage = document.getElementById("lightboxImage");
 const lightboxTitle = document.getElementById("lightboxTitle");
 const lightboxText = document.getElementById("lightboxText");
 
-let currentLang = "ar";
+function getSavedLanguage() {
+  try {
+    const saved = localStorage.getItem("clinicLang");
+    return saved === "en" ? "en" : "ar";
+  } catch (error) {
+    return "ar";
+  }
+}
+
+let currentLang = getSavedLanguage();
 let currentCertFilter = "academic";
 
 function setStaticText(lang) {
@@ -349,20 +360,64 @@ function renderMethods(lang) {
   `).join("");
 }
 
-function renderServices(lang) {
-  servicesGrid.innerHTML = content[lang].services.map(item => {
-    const iconMarkup = item.icon && /\.(svg|png|jpg|jpeg|webp)$/i.test(item.icon)
-      ? `<img src="${item.icon}" alt="" aria-hidden="true" loading="lazy" />`
-      : `<span aria-hidden="true">${item.icon || "✦"}</span>`;
+function getMedicalIcon(title, fallbackIcon) {
+  const name = String(title || "").toLowerCase();
+  const svg = (path) => `
+    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      ${path}
+    </svg>`;
 
-    return `
-      <article class="service-card">
-        <div class="service-icon">${iconMarkup}</div>
-        <h3>${item.title}</h3>
-        <p>${item.text}</p>
-      </article>
-    `;
-  }).join("");
+  if (fallbackIcon && /\.(svg|png|jpg|jpeg|webp)$/i.test(fallbackIcon)) {
+    return `<img src="${fallbackIcon}" alt="" aria-hidden="true" loading="lazy" />`;
+  }
+
+  if (name.includes("depression") || name.includes("الاكتئاب")) {
+    return svg('<path d="M12 4a7 7 0 0 0-7 7c0 3.5 2.6 6.4 6 6.9V21h2v-3.1c3.4-.5 6-3.4 6-6.9a7 7 0 0 0-7-7Z"/><path d="M9 11h.01M15 11h.01M9.5 14.5c1.4 1 3.6 1 5 0"/>');
+  }
+
+  if (name.includes("anxiety") || name.includes("القلق")) {
+    return svg('<path d="M4 13c2-4 5-4 8 0s6 4 8 0"/><path d="M4 17c2-3 5-3 8 0s6 3 8 0"/><path d="M12 4v4"/><path d="M9 7l3-3 3 3"/>');
+  }
+
+  if (name.includes("panic") || name.includes("الهلع")) {
+    return svg('<path d="M13 2 4 14h7l-1 8 10-13h-7l1-7Z"/>');
+  }
+
+  if (name.includes("obsessive") || name.includes("الوسواس")) {
+    return svg('<path d="M17 2v5h-5"/><path d="M7 22v-5h5"/><path d="M19 9a7 7 0 0 0-12-4l-2 2"/><path d="M5 15a7 7 0 0 0 12 4l2-2"/>');
+  }
+
+  if (name.includes("sleep") || name.includes("النوم")) {
+    return svg('<path d="M20 15.5A8.5 8.5 0 0 1 8.5 4 7 7 0 1 0 20 15.5Z"/><path d="M16 3h4l-4 5h4"/>');
+  }
+
+  if (name.includes("mood") || name.includes("المزاج")) {
+    return svg('<path d="M4 19V5"/><path d="M4 19h16"/><path d="m7 15 3-4 3 2 5-7"/><path d="M16 6h2v2"/>');
+  }
+
+  if (name.includes("stress") || name.includes("الضغوط")) {
+    return svg('<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="M9 12l2 2 4-5"/>');
+  }
+
+  if (name.includes("neurological") || name.includes("الأعصاب")) {
+    return svg('<path d="M12 3v18"/><path d="M8 6a4 4 0 0 0 0 8"/><path d="M16 6a4 4 0 0 1 0 8"/><path d="M6 10H3"/><path d="M21 10h-3"/><path d="M8 18h8"/>');
+  }
+
+  if (name.includes("headache") || name.includes("migraine") || name.includes("الصداع") || name.includes("الشقيقة")) {
+    return svg('<path d="M9 21h6"/><path d="M10 17c-3-1-5-4-5-7a7 7 0 0 1 14 0c0 3-2 6-5 7"/><path d="M12 7v4"/><path d="M10 9h4"/>');
+  }
+
+  return svg('<path d="M12 21s7-4.4 7-10a7 7 0 1 0-14 0c0 5.6 7 10 7 10Z"/><path d="M9 11h6"/><path d="M12 8v6"/>');
+}
+
+function renderServices(lang) {
+  servicesGrid.innerHTML = content[lang].services.map(item => `
+    <article class="service-card">
+      <div class="service-icon">${getMedicalIcon(item.title, item.icon)}</div>
+      <h3>${item.title}</h3>
+      <p>${item.text}</p>
+    </article>
+  `).join("");
 }
 
 function createInteractiveCard(item, className) {
@@ -434,6 +489,36 @@ function renderFaq(lang) {
   `).join("");
 }
 
+
+let revealObserver;
+function setupReveal() {
+  const targets = document.querySelectorAll(".section-head, .hero-copy, .hero-visual, .content-card, .side-panel, .service-card, .cert-card, .gallery-card, .youtube-card, .youtube-video-card, .contact-card, .map-card, .booking-cta-card, .faq-item");
+
+  if (!("IntersectionObserver" in window)) {
+    targets.forEach(el => el.classList.add("is-visible"));
+    return;
+  }
+
+  if (revealObserver) {
+    revealObserver.disconnect();
+  }
+
+  revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+
+  targets.forEach((el, index) => {
+    el.classList.add("reveal");
+    el.style.setProperty("--reveal-delay", `${Math.min(index % 8, 7) * 45}ms`);
+    revealObserver.observe(el);
+  });
+}
+
 function renderAll() {
   setStaticText(currentLang);
   renderTrust(currentLang);
@@ -445,6 +530,7 @@ function renderAll() {
   Array.from(certTabs.querySelectorAll("button")).forEach(btn => {
     btn.classList.toggle("active", btn.dataset.certFilter === currentCertFilter);
   });
+  setupReveal();
 }
 
 function syncBodyLock() {
@@ -503,6 +589,9 @@ document.addEventListener("keydown", (event) => {
 
 langToggle.addEventListener("click", () => {
   currentLang = currentLang === "ar" ? "en" : "ar";
+  try {
+    localStorage.setItem("clinicLang", currentLang);
+  } catch (error) {}
   renderAll();
 });
 
